@@ -26,12 +26,12 @@
     }
 
     echo ' <div class="row mb-3">
-                    <div class="col-sm-6 col-xs-12 text-xs-center text-sm-left">
-                       <h4 class="text-secondary"> Bienvenido <small>' . $_SESSION["usuario"] . '</small> <h3>
+                    <div class="col-6 text-left">
+                       <h5 class="text-secondary"> Bienvenido <small>' . $_SESSION["usuario"] . '</small> </h5>
                     </div>
                     
-                    <div class="col-sm-6 col-xs-12 text-xs-center text-sm-right">
-                         <a href="cierre.php" class="btn btn-outline-secondary text-secondary"> Cerrar Sesion<a>
+                    <div class="col-6 text-right">
+                         <a href="cierre.php" class="text-secondary"> Cerrar Sesion<a>
                     </div>
 
             </div>
