@@ -24,7 +24,7 @@ include "conexion.php";
 
     $carpeta_destino = $_SERVER['DOCUMENT_ROOT'].'/img/mascotas/';
 
-    move_uploaded_file($_FILES['foto']['tmp_name'],$carpeta_destino.$nombre_imagen);
+    move_uploaded_file($_FILES['foto']['tmp_name'],$carpeta_destino.$nombre_foto);
     
     
     $registrar ="INSERT INTO mascotas (nombre,edad,sexo,hora,img,descripcion,propietario,parque,date)
