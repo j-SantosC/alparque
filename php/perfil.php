@@ -47,7 +47,7 @@
             </div>
 <div class="container">
     <div class="row">
-        <div class=" text-center mx-auto mb-5>
+        <div class=" col text-center mx-auto mb-5>
             <?php
 
             // Aqui calculamos los likes
