@@ -69,7 +69,9 @@
                 </div>
                 <div class="form-group">
                     <label>Hora de Parque</label>
-                    <select name="hora" id="hora" class="form-control"></select>
+                    <select name="hora" id="hora" class="form-control">
+                    <option value="default"selected>Elige Hora </option> 
+
                     <?php
                         for($i=7;23>$i;$i++){
 
