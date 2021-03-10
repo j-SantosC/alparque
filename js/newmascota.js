@@ -23,10 +23,10 @@ btnEnviar.disabled = true;
 
 function arrancarListeners() {
 
-    nombre.addEventListener('blur', verificarnombre)
-    edad.addEventListener('blur', verificaredad)
-    foto.addEventListener('blur', verificarfoto)
-    descripccion.addEventListener('blur', verificardesc)
+    nombre.addEventListener('change', verificarnombre)
+    edad.addEventListener('change', verificaredad)
+    foto.addEventListener('change', verificarfoto)
+    descripccion.addEventListener('change', verificardesc)
 }
 
 function verificarnombre(e) {
