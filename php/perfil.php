@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Document</title>
+    <title>Perfil</title>
 </head>
 
 <body class="mt-3">
