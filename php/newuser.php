@@ -71,7 +71,7 @@
                     <a href="newciudad.php" class="text-secondary"><small>Nueva Ciudad</small></a>
 
                     <button type="submit" class="btn btn-info btn-block mt-3" id="btnEnviar">Enviar</button>
-                    <small><a href="login.html" class="text-secondary">Ya tengo Cuenta</a></small>
+                    <small><a href="../html/login.html" class="text-secondary">Ya tengo Cuenta</a></small>
                 </form>
             </div>
         </div>
