@@ -56,7 +56,7 @@
                 </div>
                 <div class="form-group">
                     <label>Foto</label>
-                    <input type="file" id="foto" class="btn btn-outline-info" name="foto">
+                    <input type="file" id="foto" name="foto">
                 </div>
 
                 <div class="form-floating">
