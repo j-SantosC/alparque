@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Editar</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+</head>
+
+<body class="mt-3">
+<?php
+
+session_start();
+
+if(!isset($_SESSION["usuario"])){
+    header("Location:../index.html");
+}
+
+include ("conexion.php");
+
+if(!isset($_POST["actualizar"])){
+
+    $id=$_GET["id"];
+    $nombre=$_GET["nombre"];
+    $edad=$_GET["edad"];
+    $img=$_GET["img"];
+    $descripcion=$_GET["descripcion"];
+
+} else{
+    
+        $id=$_POST["id"];
+        $nombre=$_POST["nombre"];
+        $edad=$_POST["edad"];
+        $img=$_POST["img"];
+        $descripcion=$_POST["descripcion"];
+
+
+    $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$img', descripcion='$descripcion' WHERE id='$id'";
+    mysqli_query($conexion,$sql);
+    header("Location:mascotas.php");
+
+}
+?>
+
+    <div class="container mt-3">
+        
+         <?php
+        include "botones.php";
+        ?>
+</div>
+<div class="row fondo my-3">
+            <div class="col text-center">
+                <img src="../img/logotransp.png" class="w-25 ml-5  float-left img-fluid " alt="">
+              
+            </div>
+        </div>
+
+        <div class="row mb-5">
+                <div class="col text-center">
+                    <h5 class="complementario cambiotipo ">Edita tu Mascota</h5>
+                     <hr style="height:1px;border-width:0;color:#B84758;background-color:#B84758">
+
+                </div>
+            </div>
+    <div class="container mt-3">
+
+    <div class="row m-3">
+        <div class="col-md-6 mx-auto">
+            <form  name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" >
+            <div class="form-group">
+                    <input type="text" hidden class="form-control" name="id" value="<?php echo $id  ?>">
+                </div>
+                <div class="form-group">
+                    <label>Nombre de la Mascota</label>
+                    <input type="text" class="form-control" id="nombre"name="nombre" value="<?php echo $nombre  ?>">
+                </div>
+                <div class="form-group">
+                    <label>Edad de la Mascota</label>
+                    <input type="text" class="form-control" id="edad" name="edad" value="<?php echo $edad  ?>">
+                </div>
+                <div class="form-group">
+                    <label>Imagen</label>
+                    <input type="text" class="form-control" id="imagen" name="img" value="<?php echo $img  ?>">
+                </div>
+                <div class="form-group">
+                    <label>Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo $descripcion  ?>">
+                </div>
+                <br>
+                <button type ="submit" name="actualizar" id="btnEnviar" class="btn btn-block btn-outline-info mt-1">Actualizar<i class="fa fa-save ml-2"></i></button>
+
+            </form>
+        </div>
+    </div>
+<script src="../js/editar.js"></script>
+</body>
+
+</html>

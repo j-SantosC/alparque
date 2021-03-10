@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row fondo my-3">
+        <div class="col text-center">
+            <img src="../img/logotransp.png" class="w-25 ml-5  float-left img-fluid " alt="">
+
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col text-center">
+            <h5 class="complementario cambiotipo ">Registrate</h5>
+            <hr style="height:1px;border-width:0;color:#B84758;background-color:#B84758">
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <form method="post" class="w-50 mx-auto" action="newuserpost.php">
+                    <div class="mb-3" id="emaildiv">
+                        <label class="form-label">Email</label>
+                        <input type="text" name="email" id="mail" class="form-control">
+                    </div>
+                    <div class="mb-3" id="usudiv">
+                        <label class="form-label">Nombre de Usuario</label>
+                        <input type="text" name="usuario" id="usu" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" name="password1" id="pass1" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Confirma Password</label>
+                        <input type="password" name="password2" id="pass2" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                 <div class="">
+                    <label for="exampleInputPassword1" class="form-label">Ciudad</label>
+                        <select class="custom-select " name="ciudad" id="ciud">
+                            <option selected value="default">Selecciona una ciudad ya Registrada</option>
+                            <?php
+
+                            include "conexion.php";
+
+                                $consulta= " SELECT * FROM  ciudades ORDER BY nombre";
+                            
+                                $resultados=mysqli_query($conexion,$consulta);
+                                while($fila=mysqli_fetch_row($resultados)){  
+
+                                    echo '<option value="'.$fila[0].'">'.$fila[1].'</option>';
+                                }
+                            ?>
+
+                        </select>
+                 </div>
+                    <a href="newciudad.php" class="text-secondary"><small>Nueva Ciudad</small></a>
+
+                    <button type="submit" class="btn btn-info btn-block mt-3" id="btnEnviar">Enviar</button>
+                    <small><a href="login.html" class="text-secondary">Ya tengo Cuenta</a></small>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/newuser.js"></script>
+</body>
+
+</html>
