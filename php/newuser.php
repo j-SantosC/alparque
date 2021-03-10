@@ -31,7 +31,7 @@
     <div class="container ">
         <div class="row">
             <div class="col">
-                <form method="post" class="w-50 mx-auto" action="newuserpost.php">
+                <form method="post" class=" mx-auto" action="newuserpost.php">
                     <div class="mb-3" id="emaildiv">
                         <label class="form-label">Email</label>
                         <input type="text" name="email" id="mail" class="form-control">
