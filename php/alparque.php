@@ -75,7 +75,7 @@
                     <?php
                         for($i=7;23>$i;$i++){
 
-                            echo '<option value="i">'.$i.':00</option>';
+                            echo '<option value="'.$i.'">'.$i.':00</option>';
                         }
                     ?>
                     </select>
