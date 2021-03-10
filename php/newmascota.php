@@ -61,7 +61,7 @@
 
                 <div class="form-floating">
                     <label >Descripcion</label>
-                        <textarea name="descripcion" id="desc" class="form-control" placeholder="Paco es un perro raro de cojones"></textarea>
+                        <textarea name="descripcion" id="desc" class="form-control"></textarea>
                 </div>
                 
                 <div class="form-check-inline mt-3">
