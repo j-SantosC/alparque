@@ -31,7 +31,7 @@ include "conexion.php";
     }  
     
     $registrar ="INSERT INTO mascotas (nombre,edad,sexo,hora,img,descripcion,propietario,parque,date)
-                 VALUES ('$nombre','$edad','$sexo',0,'$carpeta_destino.$nombre_foto','$descripcion','$propietario',0,'0000-00-00')";
+                 VALUES ('$nombre','$edad','$sexo',0,'../img/mascotas/'.'$nombre_foto','$descripcion','$propietario',0,'0000-00-00')";
     
  mysqli_query($conexion,$registrar);
  header("Location:inicio.php");
