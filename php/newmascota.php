@@ -56,7 +56,7 @@
                 </div>
                 <div class="form-group">
                     <label>Foto</label>
-                    <input type="text" id="foto" class="form-control" name="foto">
+                    <input type="file" id="foto" class="form-control" name="foto">
                 </div>
 
                 <div class="form-floating">
