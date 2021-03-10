@@ -70,7 +70,7 @@
     </div>
     
 </div>
-<script src="../js/newcontra.js"></script>
+<!-- <script src="../js/newcontra.js"></script> -->
 </body>
 
 </html>

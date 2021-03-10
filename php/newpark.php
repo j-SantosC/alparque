@@ -81,7 +81,7 @@
     </div>
     
 </div>
-<script src="../js/newpark.js"></script>
+<!-- <script src="../js/newpark.js"></script> -->
 </body>
 
 </html>

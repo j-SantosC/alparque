@@ -98,7 +98,7 @@ if(!isset($_POST["actualizar"])){
             </form>
         </div>
     </div>
-<script src="../js/editar.js"></script>
+<!-- <script src="../js/editar.js"></script> -->
 </body>
 
 </html>
