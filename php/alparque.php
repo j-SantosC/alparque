@@ -69,12 +69,14 @@
                 </div>
                 <div class="form-group">
                     <label>Hora de Parque</label>
-                    <select name="hora" id="hora"></select>
+                    <select name="hora" id="hora" class="form-control"></select>
                     <?php
                         for($i=7;23>$i;$i++){
+
                             echo '<option value="i">'.$i.':00</option>';
                         }
                     ?>
+                    </select>
                 </div>
                 <div>
                 <select class="custom-select" id="parque" name="parque">
