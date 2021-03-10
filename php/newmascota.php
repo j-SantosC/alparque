@@ -45,7 +45,7 @@
 <div class="container">
     <div class="row m-3">
         <div class="col-md-6 mx-auto">
-            <form  action="newmascotapost.php" method="post">
+            <form  action="newmascotapost.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label>Nombre de la Mascota</label>
                     <input type="text" id="nom"class="form-control" name="nombre">
