@@ -80,8 +80,17 @@
                             <input type="text " hidden class="form-control " readonly name="date" value= <?php echo date("Y/m/d")  ?>>
                     </div>
                         <div class="form-group">
-                            <label>Hora de Parque</label>
-                            <input type="text" class="form-control" id="hora"name="hora">
+                        <label>Hora de Parque</label>
+                        <select name="hora" id="hora" class="form-control">
+                            <option value="default"selected>Elige Hora </option> 
+
+                            <?php
+                                for($i=7;23>$i;$i++){
+
+                                    echo '<option value="'.$i.'">'.$i.':00</option>';
+                                }
+                            ?>
+                    </select>
                         </div>
                         <div>
                             <select class="custom-select" id="parque" name="parque">
