@@ -4,7 +4,7 @@ include "conexion.php";
 
 $usuario = $_POST["usuario"];
 
-$temp_pass = rand(100000,99999);
+$temp_pass = rand(10000,99999);
 
 $tempPassCifrado = password_hash($temp_pass, PASSWORD_DEFAULT);
         
@@ -25,7 +25,7 @@ $emailDestino;
 
 $asunto = "Recuerar Contraseña alparque";
 
-$texto_mail = "Tu contraseña temporal es la siguiente: ".$temp_pass.". Cambiala desde dentro de la web en Editar Usuario";
+$texto_mail = "Tu Password temporal es el siguiente: ".$temp_pass.". Cambialo desde dentro de la web en Editar Usuario";
 
 $headers= "MIME-Version: 1.0\r\n";
 $headers.="Content-type: text/html; charset=iso-8859-1\r\n";
