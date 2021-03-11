@@ -27,8 +27,6 @@
     //     exit;
     // }
     
-    include "botones.php";
-
     $usuario =$_GET["usu"]
 
 
