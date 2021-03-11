@@ -23,7 +23,7 @@
 
     if(!isset($_SERVER['HTTP_REFERER'])){
     
-        header('location:index.html');
+        header('location:/html/index.html');
         exit;
     }
     
