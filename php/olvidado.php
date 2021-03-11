@@ -18,13 +18,6 @@
 <body>
 <div class="container mt-3">
    
-    <?php
-
-    
-    include "botones.php";
-
-
-    ?>
    </div>
    <div class="row fondo my-3">
         <div class="col text-center">
