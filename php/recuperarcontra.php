@@ -51,7 +51,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form method="post" class="w-50 mx-auto" action="recuperarcontrapost.php">
+                <form method="post" class=" mx-auto" action="recuperarcontrapost.php">
                 <div class="mb-3">
                         <input hidden type="usuario" name="contra" class="form-control" id="usuario" value=<?php echo $usuario ?>>
                     </div>

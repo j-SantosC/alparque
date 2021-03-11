@@ -14,11 +14,12 @@ while($fila=mysqli_fetch_row($resultados)){
     $emailDestino = $fila[3];
 
 }
-$texto_mail = "Haz Click en el siguiente enlace: www.alparque.es/php/recuperarcontra.php?usu=". $usuario;
+// $texto_mail = "Haz Click en el siguiente enlace: www.alparque.es/php/recuperarcontra.php?usu=". $usuario;
+
 
 $headers= "MIME-Version: 1.0\r\n";
 $headers.="Content-type: text/html; charset=iso-8859-1\r\n";
-$headers.="From: Prueba Juan <info@alparque.es>\r\n";
+$headers.="From: alparque <info@alparque.es>\r\n";
 
 $exito=mail($emailDestino,$asunto,$texto_mail,$headers);
 
