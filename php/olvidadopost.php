@@ -4,7 +4,7 @@ include "conexion.php";
 
 $usuario = $_POST["usuario"];
 $emailDestino;
-$asunto = "Recuerar Contraseña Alparque";
+$asunto = "Recuerar Contraseña alparque";
 
 $sql = "SELECT * FROM usuarios WHERE nombre ='$usuario'";
 
@@ -20,7 +20,7 @@ $headers= "MIME-Version: 1.0\r\n";
 $headers.="Content-type: text/html; charset=iso-8859-1\r\n";
 $headers.="From: Prueba Juan <info@alparque.es>\r\n";
 
-$exito($emailDestio,$asunto,$texto_mail,$headers);
+$exito=mail($emailDestino,$asunto,$texto_mail,$headers);
 
 if($exito){
     echo " Mensaje con exito";
