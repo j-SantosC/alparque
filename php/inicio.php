@@ -61,8 +61,8 @@
                         
                         $resultadosInicio=mysqli_query($conexion,$consultaInicio);
                         if(mysqli_num_rows($resultadosInicio)==0){
-                            echo '<h5>¿Aun no has registrado a Tu perro?</h5>';
-                            echo '<a href="newmascota.php" class=" btn btn-outline-info btn-block p-3 btn">Registrar Mascota</a>';
+                            echo '<h5 class="text-secondary mb-3">¿Aun no has registrado a Tu perro?</h5>';
+                            echo '<a href="newmascota.php" class=" btn btn-outline-info p-3 btn">Registrar Mascota</a>';
                         }  else{
                             echo' <h5 class=" mt-5 text-secondary font-italic">Como estan tus mascotas?</h5> ';
                         }
