@@ -14,7 +14,7 @@ while($fila=mysqli_fetch_row($resultados)){
     $emailDestino = $fila[3];
 
 }
-// $texto_mail = "Haz Click en el siguiente enlace: www.alparque.es/php/recuperarcontra.php?usu=". $usuario;
+$texto_mail = "Haz Click en el siguiente enlace: www.alparque.es/php/recuperarcontra.php?usu=". $usuario;
 
 
 $headers= "MIME-Version: 1.0\r\n";
