@@ -8,7 +8,7 @@ $temp_pass = rand(10000,99999);
 
 $tempPassCifrado = password_hash($temp_pass, PASSWORD_DEFAULT);
         
-$registrar ="UPDATE usuarios SET password='$tempPassCifrado' WHERE usuario='$usuario'";
+$registrar ="UPDATE usuarios SET password='$tempPassCifrado' WHERE nombre='$usuario'";
 
 mysqli_query($conexion,$registrar);
 

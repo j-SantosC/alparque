@@ -35,7 +35,7 @@
 
     <div class="row mb-5">
         <div class="col text-center">
-            <h5 class="complementario cambiotipo ">Nueva Contraseña</h5>
+            <h5 class="complementario cambiotipo ">Olvide mi Contraseña</h5>
             <hr style="height:1px;border-width:0;color:#B84758;background-color:#B84758">
 
         </div>
