@@ -1,12 +1,7 @@
 <?php
 
-session_start();
 
-if(!isset($_SESSION["usuario"])){
-    header("Location:../index.html");
-}
-
-$sesion=$_SESSION["usuario"];
+$usuario=$_POST["usuario"];
 
 include "conexion.php";
 
@@ -18,13 +13,19 @@ include "conexion.php";
 
         $passCifrado = password_hash($password1, PASSWORD_DEFAULT);
         
-        $registrar ="UPDATE usuarios SET password='$passCifrado' WHERE usuario='$sesion'";
+        $registrar ="UPDATE usuarios SET password='$passCifrado' WHERE nombre = '$usuario'";
     
     mysqli_query($conexion,$registrar);
+
+    session_start();
+
+    $_SESSION["usuario"]=$usuario;
+
+    header("Location:inicio.php");
     
 }
 
 
- header("Location:inicio.php");
+ header("Location:recperacontra.php");
 
 ?>
