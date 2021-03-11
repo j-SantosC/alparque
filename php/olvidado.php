@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <title>Login</title>
+    <title>Nueva Contraseña</title>
     <link rel="stylesheet" href="../css/styles.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,8 +16,17 @@
 </head>
 
 <body>
+<div class="container mt-3">
+   
+    <?php
 
-    <div class="row fondo my-3">
+    
+    include "botones.php";
+
+
+    ?>
+   </div>
+   <div class="row fondo my-3">
         <div class="col text-center">
             <img src="../img/logotransp.png" class="w-25 ml-5  float-left img-fluid " alt="">
 
@@ -24,31 +35,31 @@
 
     <div class="row mb-5">
         <div class="col text-center">
-            <h5 class="complementario cambiotipo ">Inicia Sesion</h5>
+            <h5 class="complementario cambiotipo ">Nueva Contraseña</h5>
             <hr style="height:1px;border-width:0;color:#B84758;background-color:#B84758">
 
         </div>
     </div>
-    <div class="container ">
-        <div class="row mx-auto">
-            <div class="col mx-auto">
-                <form method="post" class=" mx-auto" action="../php/login.php">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form method="post" class="w-50 mx-auto" action="newcontrapost.php">
                     <div class="mb-3">
-                        <label class="form-label">Usuario</label>
-                        <input type="text" name="usuario" class="form-control">
+                        <label class="form-label">Nueva Contraseña</label>
+                        <input type="password" name="contra" class="form-control" id="contra">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                        <label class="form-label">Confirma Contraseña</label>
+                        <input type="password" name="confirma" class="form-control" id="confirma">
                     </div>
-                    <button type="submit" class="btn btn-info btn-block">Enviar</button>
-                    <small><a href="../php/newuser.php" class="text-secondary">Aun no tengo Cuenta</a></small>
-                    <small><a href="../php/olvidado.php" class="text-secondary">Me he olvidado de la Contraseña</a></small>
-
+                    <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
             </div>
         </div>
     </div>
+    
+</div>
+<!-- <script src="../js/newcontra.js"></script> -->
 </body>
 
 </html>
