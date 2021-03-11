@@ -53,7 +53,7 @@
             <div class="col">
                 <form method="post" class=" mx-auto" action="recuperarcontrapost.php">
                 <div class="mb-3">
-                        <input hidden type="usuario" name="contra" class="form-control" id="usuario" value=<?php echo $usuario ?>>
+                        <input hidden type="usuario" name="usuario" class="form-control" id="usuario" value=<?php echo $usuario ?>>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Nueva Contraseña</label>
