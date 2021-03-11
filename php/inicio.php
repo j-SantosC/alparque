@@ -57,12 +57,14 @@
         <div class="row ">
             <div class="col text-center">
             <?php
+                        include "conexion.php";
+                        
                         $consultaInicio= " SELECT * FROM  mascotas WHERE propietario='" . $sesion . "'";
                         
                         $resultadosInicio=mysqli_query($conexion,$consultaInicio);
                         if(mysqli_num_rows($resultadosInicio)==0){
                             echo '<h5 class="text-secondary mb-3">¿Aun no has registrado a Tu perro?</h5>';
-                            echo '<a href="newmascota.php" class=" btn btn-outline-info p-3 btn">Registrar Mascota</a>';
+                            echo '<a href="newmascota.php" class=" btn btn-outline-info p-3">Registrar Mascota</a>';
                         }  else{
                             echo' <h5 class=" mt-5 text-secondary font-italic">Como estan tus mascotas?</h5> ';
                         }
@@ -71,7 +73,7 @@
             </div>
         </div>
     </div>
-    <div class="row mx-auto my-3 ">
+    <div class="row mx-auto mb-3 ">
                     <?php
                         include "conexion.php";
                         $sesion = $_SESSION["usuario"];
