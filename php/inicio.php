@@ -154,7 +154,7 @@
                     }
                     
                     ?>
-                <h5 class="text-center  text-light  my-4">Buscador de Perros:</h5>
+                <h5 class="text-center  text-light  my-2">Buscador de Perros:</h5>
                 <a href="buscar.php"> <h5 class=" p-3 my-4 btn btn-outline-light"><i class=" fas  mr-3  fa-search "></i>Ir al Buscador</h5></a>
                 
                 <hr style="height:1px;border-width:0;color:white;background-color:white">
