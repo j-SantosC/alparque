@@ -16,10 +16,10 @@
 </head>
 
 <body>
-<div class="container mt-3">
+<div class="container">
    
    </div>
-   <div class="row fondo my-3">
+   <div class="row fondo ">
         <div class="col text-center">
             <img src="../img/logotransp.png" class="w-25 ml-5  float-left img-fluid " alt="">
 
