@@ -23,9 +23,12 @@ include "conexion.php";
 
     header("Location:inicio.php");
     
+}else{
+
+    header("Location:recuperacontra.php");
+
 }
 
 
- header("Location:recperacontra.php");
 
 ?>
