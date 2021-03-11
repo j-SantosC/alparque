@@ -43,15 +43,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form method="post" class="w-50 mx-auto" action="newcontrapost.php">
+                <form method="post" class=" mx-auto" action="olvidadopost.php">
                     <div class="mb-3">
-                        <label class="form-label">Nueva Contraseña</label>
-                        <input type="password" name="contra" class="form-control" id="contra">
+                        <label class="form-label">Introduce tu nombre de usuario</label>
+                        <input type="text" name="usuario" class="form-control" id="contra">
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Confirma Contraseña</label>
-                        <input type="password" name="confirma" class="form-control" id="confirma">
-                    </div>
+                    
                     <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
             </div>
