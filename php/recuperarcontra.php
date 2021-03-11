@@ -21,11 +21,11 @@
 
     // Evitamos que el usuario escriba esta url directamente
 
-    if(!isset($_SERVER['HTTP_REFERER'])){
+    // if(!isset($_SERVER['HTTP_REFERER'])){
     
-        header('location:index.html');
-        exit;
-    }
+    //     header('location:index.html');
+    //     exit;
+    // }
     
     include "botones.php";
 
