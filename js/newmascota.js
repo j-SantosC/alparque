@@ -112,9 +112,9 @@ function verificarfoto(e) {
 
         mostrarError(e, "La foto es obligatoria", edadhaserror)
 
-        edadhaserror = true;
+        vfotohaserror = true;
 
-        vedad = false
+        vfoto = false
 
         desactivarBoton()
 
