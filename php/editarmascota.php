@@ -37,11 +37,23 @@ if(!isset($_POST["actualizar"])){
         $id=$_POST["id"];
         $nombre=$_POST["nombre"];
         $edad=$_POST["edad"];
-        $img=$_POST["img"];
         $descripcion=$_POST["descripcion"];
 
+        $nombre_foto = $_FILES['foto']['name'];
+        $size_foto = $_FILES['foto']['size'];
 
-    $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$img', descripcion='$descripcion' WHERE id='$id'";
+        if($size_foto<=5000000){
+
+        $carpeta_destino = $_SERVER['DOCUMENT_ROOT'].'/img/mascotas/';
+
+        $ruta_relativa = "../img/mascotas/";
+
+        move_uploaded_file($_FILES['foto']['tmp_name'],$carpeta_destino.$nombre_foto);
+
+        }  
+
+
+    $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$ruta_relativa$nombre_foto', descripcion='$descripcion' WHERE id='$id'";
     mysqli_query($conexion,$sql);
     header("Location:mascotas.php");
 
@@ -85,8 +97,8 @@ if(!isset($_POST["actualizar"])){
                     <input type="text" class="form-control" id="edad" name="edad" value="<?php echo $edad  ?>">
                 </div>
                 <div class="form-group">
-                    <label>Imagen</label>
-                    <input type="file" id="imagen" name="img" value="<?php echo $img  ?>">
+                    <label>Foto</label>
+                    <input type="file" id="imagen" name="foto" value="<?php echo $img  ?>">
                 </div>
                 <div class="form-group">
                     <label>Descripcion</label>
