@@ -65,6 +65,8 @@ function verificaredad(e) {
 
         vedad = true
 
+        console.log(vedad);
+
         activarBoton()
 
         eliminarError(e)
