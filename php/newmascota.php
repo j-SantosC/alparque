@@ -84,7 +84,7 @@
             </form>
         </div>
     </div>
-    <script src="../js/newmascota4.js" type="text/javascript"></script>
+    <script src="../js/newmascota5.js" type="text/javascript"></script>
 </body>
 
 </html>
