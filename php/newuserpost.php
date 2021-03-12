@@ -7,7 +7,7 @@ $usuario= $_POST["usuario"];
 $email=$_POST["email"];
 $ciudad=$_POST["ciudad"];
 
-$consultaUsu= " SELECT * FROM  usuarrios WHERE nombre='" . $usuario . "'";
+$consultaUsu= " SELECT * FROM  usuarios WHERE nombre='" . $usuario . "'";
                         
                 $resultadosUsu=mysqli_query($conexion,$consultaUsu);
                 if(mysqli_num_rows($resultadosUsu)>0){
