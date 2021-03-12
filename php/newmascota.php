@@ -84,7 +84,8 @@
             </form>
         </div>
     </div>
-    <script src="../js/newmascota5.js" type="text/javascript"></script>
+    <?php $v=rand(10000,99999)?>
+    <script src="../js/newmascota.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
