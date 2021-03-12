@@ -59,7 +59,7 @@
     </div>
     
 </div>
-<!-- <script src="../js/newciudad.js"></script> -->
+<script src="../js/newciudad.js"></script>
 </body>
 
 </html>
