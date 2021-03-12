@@ -6,7 +6,7 @@ let pass2 = document.querySelector('#confirma');
 
 let btnEnviar = document.querySelector('#btnEnviar');
 
-
+let contrahaserror = false;
 
 let vcontra = false;
 let vcontra2 = false;
@@ -131,5 +131,19 @@ function desactivarBoton() {
 
         btnEnviar.disabled = true;
 
+    }
+}
+
+function mostrarError(e, error, haserror) {
+
+    if (!haserror) {
+
+        let midiv = document.createElement("p");
+        midiv.innerText = `${error}`;
+        midiv.classList.add("text-danger");
+        e.target.parentElement.append(midiv);
+
+    } else {
+        return
     }
 }
