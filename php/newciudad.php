@@ -59,7 +59,8 @@
     </div>
     
 </div>
-<script src="../js/newciudad2.js"></script>
+<?php $v=rand(10000,99999)?>
+<script src="../js/newciudad2.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
