@@ -30,6 +30,7 @@ function arrancarListeners() {
 
 function verificarnombre(e) {
     if (e.target.value.length > 0) {
+        console.log(e.target.value.length)
         e.target.classList.remove("is-invalid")
         e.target.classList.add("is-valid")
 
@@ -41,6 +42,7 @@ function verificarnombre(e) {
 
         nomhaserror = false;
     } else {
+        console.log(e.target.value.length)
         e.target.classList.remove("is-valid")
         e.target.classList.add("is-invalid")
 
