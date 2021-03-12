@@ -32,7 +32,7 @@ function arrancarListeners() {
 
     usuario.addEventListener('blur', verificarUsuario)
     mail.addEventListener('blur', verificarMail)
-    pass1.addEventListener('blur', verificarPass2)
+    pass1.addEventListener('blur', verificarPass)
     pass2.addEventListener('blur', verificarPass2)
     ciudad.addEventListener('blur', verificarCiudad)
 
@@ -129,8 +129,6 @@ function verificarPass(e) {
             pass2.classList.remove("is-valid")
             pass2.classList.add("is-invalid")
 
-            mostrarError(e, "Las contraseñas deben coincidir", contrahaserror)
-
             contrahaserror = true;
 
             vcontra = false
@@ -141,6 +139,8 @@ function verificarPass(e) {
 
     } else {
 
+        pass1.classList.remove("is-valid")
+        pass1.classList.add("is-invalid")
 
         vcontra = false
 
