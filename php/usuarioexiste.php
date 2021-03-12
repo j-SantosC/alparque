@@ -29,14 +29,12 @@
 
         </div>
     </div>
-    <div class="container ">
-        <div class="row fondo mx-auto">
+        <div class="row fondo mx-auto p-5">
             <div class="col mx-auto">
-                <h5 class="text-light"> El nombre de usuario ya existe</h5>
-                <a href="newuser.php btn btn-outline-light">Volver</a>
+                <p class="text-light p-5"> El nombre de usuario ya existe</p>
+                <a href="newuser.php" class="btn btn-outline-light">Volver</a>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
