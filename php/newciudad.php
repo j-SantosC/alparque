@@ -49,7 +49,7 @@
             <div class="col">
                 <form method="post" class=" mx-auto" action="newciudadpost.php">
                     <div class="mb-3">
-                        <label class="form-label">Nombre de la Ciudad</label>
+                        <label class="form-label">Nombre de la Ciudad o Pueblo</label>
                         <input type="text" name="nombre" class="form-control" id="nombre">
                     </div>
                     <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
