@@ -1,4 +1,4 @@
-console.log("pruebass4");
+console.log("lol");
 
 let nombre = document.querySelector('#nom');
 let edad = document.querySelector('#edad');
@@ -32,11 +32,13 @@ function arrancarListeners() {
 
 function verificarnombre(e) {
     if (e.target.value.length > 0) {
-        console.log(e.target.value.length)
+
+
         e.target.classList.remove("is-invalid")
         e.target.classList.add("is-valid")
 
         vnom = true
+        console.log("vnom =" + vnom);
 
         activarBoton()
 
@@ -44,7 +46,7 @@ function verificarnombre(e) {
 
         nomhaserror = false;
     } else {
-        console.log(e.target.value.length)
+
         e.target.classList.remove("is-valid")
         e.target.classList.add("is-invalid")
 
@@ -67,7 +69,7 @@ function verificaredad(e) {
 
         vedad = true
 
-        console.log(vedad);
+        console.log("vedad =" + vedad);
 
         activarBoton()
 
@@ -96,6 +98,7 @@ function verificarfoto(e) {
         e.target.classList.add("is-valid")
 
         vfoto = true
+        console.log("vfoto =" + vfoto);
 
         activarBoton()
 
@@ -124,6 +127,7 @@ function verificardesc(e) {
         e.target.classList.add("is-valid")
 
         vdesc = true
+        console.log("vdesc =" + vdesc);
 
         activarBoton()
 
