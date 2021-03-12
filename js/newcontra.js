@@ -43,9 +43,9 @@ function verificarPass(e) {
 
         contrahaserror = false;
 
-    } else if (e.target.value.length > 0 && !firstime) {
+    } else if (!firstime) {
 
-        if (e.target.value == pass2.value) {
+        if (e.target.value.length > 0 && e.target.value == pass2.value) {
 
             pass1.classList.add("is-valid")
             pass1.classList.remove("is-invalid")
