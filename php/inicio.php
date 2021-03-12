@@ -89,7 +89,7 @@
                                 echo '
                                 <div class="col-xs-12 col-sm text-center ">
                                     <div class="card  ml-3 mt-3 mx-auto" style="width: 12rem ;">
-                                        <img src="' .$fila[5] .'" class="card-img-top img-fluid" alt="imagen mascota" style="width:100%;height:100px;">
+                                        <img src="' .$fila[5] .'" class="card-img-top img-fluid" alt="imagen mascota" style="width:100%;height:100px;object-fit:cover;">
                                         <div class="card-body">
                                             <h5 class="card-title text-secondary">' .$fila[1].'</h5>
                                             <a href="alparque.php?id='.$fila[0].'&nombre='.$fila[1].'&imagen='.$fila[5].'" class=" btn btn-outline-info btn-block mt-3">Al Parque!</a>
