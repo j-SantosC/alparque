@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', arrancar)
 function arrancar() {
 
 
-    console.log("Esto funciona bien")
+    console.log("Esto funciona jodidamente bien")
 
     arrancarListeners();
 
