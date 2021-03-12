@@ -10,12 +10,14 @@ let usudiv = document.querySelector("#usudiv");
 
 let vusu = false;
 let vcontra = false;
+let vcontra2 = false
 let vmail = false;
 let vciudad = false;
 
 let usuhaserror = false;
 let mailhaserror = false;
 let cityhaserror = false;
+let contrahaserror = false;
 
 arrancarListeners();
 btnEnviar.disabled = true;
@@ -27,7 +29,7 @@ function arrancarListeners() {
     usuario.addEventListener('blur', verificarUsuario)
     mail.addEventListener('blur', verificarMail)
     pass1.addEventListener('blur', verificarPass)
-    pass2.addEventListener('blur', verificarPass)
+    pass2.addEventListener('blur', verificarPass2)
     ciudad.addEventListener('blur', verificarCiudad)
 
 }
@@ -59,6 +61,7 @@ function verificarUsuario(e) {
 
     }
 }
+
 
 function verificarMail(e) {
 
@@ -92,15 +95,35 @@ function verificarMail(e) {
 }
 
 function verificarPass(e) {
+    if (e.target.value.length > 0) {
 
-    if (e.target.value == pass2.value && e.target.value == pass1.value && e.target.value.length > 0) {
+        vcontra = true
+
+        activarBoton()
+
+        eliminarError(e)
+
+        contrahaserror = false;
+    } else {
+
+
+        vcontra = false
+
+        desactivarBoton()
+
+    }
+}
+
+function verificarPass2(e) {
+
+    if (e.target.value == pass1.value && e.target.value.length > 0) {
 
         pass1.classList.add("is-valid")
         pass1.classList.remove("is-invalid")
         pass2.classList.add("is-valid")
         pass2.classList.remove("is-invalid")
 
-        vcontra = true
+        vcontra2 = true
 
         activarBoton()
 
@@ -110,8 +133,11 @@ function verificarPass(e) {
         pass2.classList.remove("is-valid")
         pass2.classList.add("is-invalid")
 
+        mostrarError(e, "Las contraseñas deben coincidir", contrahaserror)
 
-        vcontra = false
+        contrahaserror = true;
+
+        vcontra2 = false
 
         desactivarBoton()
 
@@ -143,7 +169,7 @@ function verificarCiudad(e) {
 }
 
 function activarBoton() {
-    if (vusu && vmail && vcontra && vciudad) {
+    if (vusu && vmail && vcontra && vcontra2 && vciudad) {
 
         btnEnviar.disabled = false;
 
@@ -151,7 +177,7 @@ function activarBoton() {
 }
 
 function desactivarBoton() {
-    if (vusu == false || vmail == false || vcontra == false || vciudad == false) {
+    if (vusu == false || vmail == false || vcontra == false || vcontra2 == false || vciudad == false) {
 
         btnEnviar.disabled = true;
 
