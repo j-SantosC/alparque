@@ -1,4 +1,4 @@
-console.log("prueba");
+console.log("pruebass");
 
 let nombre = document.querySelector('#nom');
 let edad = document.querySelector('#edad');
@@ -24,10 +24,10 @@ btnEnviar.disabled = true;
 
 function arrancarListeners() {
 
-    nombre.addEventListener('keypress', verificarnombre)
-    edad.addEventListener('keypress', verificaredad)
+    nombre.addEventListener('blur', verificarnombre)
+    edad.addEventListener('blur', verificaredad)
     foto.addEventListener('blur', verificarfoto)
-    descripccion.addEventListener('keypress', verificardesc)
+    descripccion.addEventListener('blur', verificardesc)
 }
 
 function verificarnombre(e) {
