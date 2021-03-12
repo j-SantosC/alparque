@@ -27,7 +27,7 @@ function arrancarListeners() {
 }
 
 function verificarhora(e) {
-    if (e.target.value.length > 0 && Number(e.target.value)) {
+    if (e.target.value != "default") {
         e.target.classList.remove("is-invalid")
         e.target.classList.add("is-valid")
 
@@ -43,7 +43,7 @@ function verificarhora(e) {
         e.target.classList.add("is-invalid")
 
 
-        mostrarError(e, "Inica una hora en la forma de numero entero", horahaserror)
+        mostrarError(e, "Inica una hora", horahaserror)
 
         horahaserror = true;
 
