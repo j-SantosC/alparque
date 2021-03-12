@@ -55,24 +55,26 @@
                         <label class="form-label">Ubicacion</label>
                         <input type="text" id="direccion" name="direccion" class="form-control">
                     </div>
-                    <select class="custom-select" id="ciudad" name="ciudad">
-                        <option value="default" selected>Selecciona una ciudad ya Registrada</option>
-                        <?php
+                    <div class="">
+                        <select class="custom-select" id="ciudad" name="ciudad">
+                            <option value="default" selected>Selecciona una ciudad ya Registrada</option>
+                            <?php
 
-                        include "conexion.php";
+                            include "conexion.php";
 
-                        // Obteninendo ciudades
+                            // Obteninendo ciudades
 
-                            $consulta= " SELECT * FROM  ciudades ORDER BY nombre";
-                        
-                            $resultados=mysqli_query($conexion,$consulta);
-                            while($fila=mysqli_fetch_row($resultados)){  
+                                $consulta= " SELECT * FROM  ciudades ORDER BY nombre";
+                            
+                                $resultados=mysqli_query($conexion,$consulta);
+                                while($fila=mysqli_fetch_row($resultados)){  
 
-                                echo '<option value="'.$fila[0].'">'.$fila[1].'</option>';
-                            }
-                        ?>
+                                    echo '<option value="'.$fila[0].'">'.$fila[1].'</option>';
+                                }
+                            ?>
 
-                    </select>
+                        </select>
+                    </div>
                     <a href="newciudad.php" class="text-secondary"><small>Nueva Ciudad</small></a>
                     <button type="submit" id="btnEnviar"class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
