@@ -98,7 +98,8 @@ if(!isset($_POST["actualizar"])){
             </form>
         </div>
     </div>
-<!-- <script src="../js/editar.js"></script> -->
+    <?php $v=rand(10000,99999)?>
+    <script src="../js/editarmascota.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>

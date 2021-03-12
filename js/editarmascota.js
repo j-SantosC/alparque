@@ -9,13 +9,11 @@ let descripcion = document.querySelector('#descripcion')
 
 let vnom = true;
 let vedad = true;
-let vimg = true;
 let vdesc = true;
 
 
 let nomhaserror = false;
 let edadhaserror = false;
-let imghaserror = false;
 let deschaserror = false;
 
 
@@ -89,33 +87,6 @@ function verificarnom(e) {
     }
 }
 
-function verificarimg(e) {
-    if (e.target.value.length > 0) {
-        e.target.classList.remove("is-invalid")
-        e.target.classList.add("is-valid")
-
-        vimg = true
-
-        activarBoton()
-
-        eliminarError(e)
-
-        imghaserror = false;
-    } else {
-        e.target.classList.remove("is-valid")
-        e.target.classList.add("is-invalid")
-
-
-        mostrarError(e, "Indica una imagen correcta", imghaserror)
-
-        imghaserror = true;
-
-        vimg = false
-
-        desactivarBoton()
-
-    }
-}
 
 function verificardesc(e) {
     if (e.target.value.length > 0) {
@@ -149,7 +120,7 @@ function verificardesc(e) {
 
 
 function activarBoton() {
-    if (vnom && vedad && vimg && vdesc) {
+    if (vnom && vedad && vdesc) {
 
         btnEnviar.disabled = false;
 
@@ -157,7 +128,7 @@ function activarBoton() {
 }
 
 function desactivarBoton() {
-    if (vnom == false || vedad == false || vimg == false || vdesc == false) {
+    if (vnom == false || vedad == false || vdesc == false) {
 
         btnEnviar.disabled = true;
 
