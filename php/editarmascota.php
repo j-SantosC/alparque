@@ -72,7 +72,7 @@ if(!isset($_POST["actualizar"])){
 
     <div class="row m-3">
         <div class="col-md-6 mx-auto">
-            <form  name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" >
+            <form  name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"enctype="multipart/form-data" >
             <div class="form-group">
                     <input type="text" hidden class="form-control" name="id" value="<?php echo $id  ?>">
                 </div>
@@ -86,7 +86,7 @@ if(!isset($_POST["actualizar"])){
                 </div>
                 <div class="form-group">
                     <label>Imagen</label>
-                    <input type="text" class="form-control" id="imagen" name="img" value="<?php echo $img  ?>">
+                    <input type="file" id="imagen" name="img" value="<?php echo $img  ?>">
                 </div>
                 <div class="form-group">
                     <label>Descripcion</label>
