@@ -81,7 +81,8 @@
     </div>
     
 </div>
-<!-- <script src="../js/newpark.js"></script> -->
+<?php $v=rand(10000,99999)?>
+<script src="../js/newuser.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
