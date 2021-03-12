@@ -1,4 +1,4 @@
-console.log("Funciona en link");
+console.log("Funciona en link no me jodas");
 
 let nombre = document.querySelector('#nom');
 let edad = document.querySelector('#edad');
