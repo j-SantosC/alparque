@@ -4,6 +4,7 @@ let nombre = document.querySelector('#nom');
 let edad = document.querySelector('#edad');
 let foto = document.querySelector('#foto');
 let descripccion = document.querySelector('#desc');
+
 let btnEnviar = document.querySelector('#btnEnviar');
 
 let vnom = false;
@@ -23,10 +24,10 @@ btnEnviar.disabled = true;
 
 function arrancarListeners() {
 
-    nombre.addEventListener('change', verificarnombre)
-    edad.addEventListener('change', verificaredad)
-    foto.addEventListener('change', verificarfoto)
-    descripccion.addEventListener('change', verificardesc)
+    nombre.addEventListener('keypress', verificarnombre)
+    edad.addEventListener('keypress', verificaredad)
+    foto.addEventListener('keypress', verificarfoto)
+    descripccion.addEventListener('keypress', verificardesc)
 }
 
 function verificarnombre(e) {
