@@ -6,8 +6,6 @@ let pass2 = document.querySelector('#confirma');
 
 let btnEnviar = document.querySelector('#btnEnviar');
 
-let contrahaserror = false;
-
 let vcontra = false;
 let vcontra2 = false;
 

@@ -3,22 +3,47 @@
 
 include "conexion.php";
 
-    $usuario= $_POST["usuario"];
-    $email=$_POST["email"];
-    $ciudad=$_POST["ciudad"];
+$usuario= $_POST["usuario"];
+$email=$_POST["email"];
+$ciudad=$_POST["ciudad"];
 
-    $password= $_POST["password1"];
-    $passCifrado = password_hash($password, PASSWORD_DEFAULT);
+$consultaUsu= " SELECT * FROM  usuarrios WHERE nombre='" . $usuario . "'";
+                        
+                $resultadosUsu=mysqli_query($conexion,$consultaUsu);
+                if(mysqli_num_rows($resultadosUsu)>0){
 
-    $registrar ="INSERT INTO usuarios (nombre,password,ciudad,email)
-                 VALUES ('$usuario','$passCifrado',$ciudad,'$email')";
-    
- mysqli_query($conexion,$registrar);
+                    header("Location:usuarioexiste.php");
 
- session_start();
+             } else{
 
- $_SESSION["usuario"]=$usuario;
+                $consultaMail= " SELECT * FROM  usuarrios WHERE email='" . $email . "'";
+                        
+                $resultadosMail=mysqli_query($conexion,$consultaMail);
+                if(mysqli_num_rows($resultadosMail)>0){
 
- header("Location:inicio.php");
+                    header("Location:emailexiste.php");
+
+
+                }else{
+
+                $password= $_POST["password1"];
+                $passCifrado = password_hash($password, PASSWORD_DEFAULT);
+            
+                $registrar ="INSERT INTO usuarios (nombre,password,ciudad,email)
+                             VALUES ('$usuario','$passCifrado',$ciudad,'$email')";
+                
+                mysqli_query($conexion,$registrar);
+            
+                 session_start();
+            
+                $_SESSION["usuario"]=$usuario;
+            
+                 header("Location:inicio.php");
+
+             }
+
+  
+            }
+  
 
 ?>

@@ -79,7 +79,6 @@ function verificarMail(e) {
 
         activarBoton()
 
-
         eliminarError(e)
 
         mailhaserror = false;
@@ -181,9 +180,10 @@ function verificarCiudad(e) {
     if (e.target.value != "default") {
         e.target.classList.remove("is-invalid")
         e.target.classList.add("is-valid")
-        vciudad = true
-        activarBoton()
 
+        vciudad = true
+
+        activarBoton()
 
         eliminarError(e)
 
@@ -234,7 +234,6 @@ function mostrarError(e, error, haserror) {
 function eliminarError(e) {
     if (e.target.nextSibling) {
         while (e.target.nextSibling) {
-            console.log("entro")
             let error = e.target.nextSibling;
             error.remove()
         }
