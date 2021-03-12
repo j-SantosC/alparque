@@ -76,7 +76,7 @@
             </div>
         </div>
     </div>
-    <!-- <script src="../js/newuser.js"></script> -->
+    <script src="../js/newuser.js"></script>
 </body>
 
 </html>
