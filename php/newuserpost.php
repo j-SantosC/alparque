@@ -16,7 +16,7 @@ $consultaUsu= " SELECT * FROM  usuarios WHERE nombre='" . $usuario . "'";
 
              } else{
 
-                $consultaMail= " SELECT * FROM  usuarrios WHERE email='" . $email . "'";
+                $consultaMail= " SELECT * FROM  usuarios WHERE email='" . $email . "'";
                         
                 $resultadosMail=mysqli_query($conexion,$consultaMail);
                 if(mysqli_num_rows($resultadosMail)>0){
