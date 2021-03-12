@@ -1,3 +1,5 @@
+console.log("prueba");
+
 let nombre = document.querySelector('#nom');
 let edad = document.querySelector('#edad');
 let foto = document.querySelector('#foto');
