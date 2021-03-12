@@ -62,6 +62,9 @@ function verificarPass(e) {
             pass2.classList.remove("is-valid")
             pass2.classList.add("is-invalid")
 
+
+            mostrarError(pass2, "Las contraseñas deben coincidir siempre", contrahaserror)
+
             contrahaserror = true;
 
             vcontra = false
