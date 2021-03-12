@@ -16,19 +16,6 @@
 <body>
 <div class="container mt-3">
    
-     <?php
-
-    // session_start();
-
-    // if(!isset($_SESSION["usuario"])){
-    //     header("Location:index.html");
-    // }
-    
-    //include "botones.php";
-
-
-    ?> 
-   
    </div>
        <div class="row fondo my-3">
         <div class="col text-center">
