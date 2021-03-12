@@ -24,7 +24,7 @@ $passCifrado = $fila[1];
 
 
     }else{
-        header("Location:../index.html");
+        header("Location:../login.html");
 
     }
 
