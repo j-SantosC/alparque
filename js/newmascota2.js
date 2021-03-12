@@ -24,7 +24,7 @@ function arrancarListeners() {
 
     nombre.addEventListener('keypress', verificarnombre)
     edad.addEventListener('keypress', verificaredad)
-    foto.addEventListener('keypress', verificarfoto)
+    foto.addEventListener('blur', verificarfoto)
     descripccion.addEventListener('keypress', verificardesc)
 }
 
