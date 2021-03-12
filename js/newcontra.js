@@ -95,6 +95,8 @@ function verificarPass2(e) {
 
         vcontra2 = true
 
+        eliminarError();
+
         activarBoton()
 
     } else {
@@ -145,5 +147,16 @@ function mostrarError(e, error, haserror) {
 
     } else {
         return
+    }
+}
+
+function eliminarError(e) {
+    if (e.target.nextSibling) {
+        while (e.target.nextSibling) {
+            console.log("entro")
+            let error = e.target.nextSibling;
+            error.remove()
+        }
+
     }
 }
