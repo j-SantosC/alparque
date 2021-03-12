@@ -9,7 +9,7 @@ let btnEnviar = document.querySelector('#btnEnviar');
 
 let vnom = false;
 let vedad = false;
-let vfoto = false;
+let vfoto = true;
 let vdesc = false;
 
 let nomhaserror = false;
