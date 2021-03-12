@@ -95,7 +95,7 @@ function verificarPass2(e) {
 
         vcontra2 = true
 
-        eliminarError();
+        eliminarError(e);
 
         activarBoton()
 
