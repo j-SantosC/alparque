@@ -21,6 +21,8 @@ let mailhaserror = false;
 let cityhaserror = false;
 let contrahaserror = false;
 
+let firstime = true;
+
 arrancarListeners();
 btnEnviar.disabled = true;
 
@@ -30,7 +32,7 @@ function arrancarListeners() {
 
     usuario.addEventListener('blur', verificarUsuario)
     mail.addEventListener('blur', verificarMail)
-    pass1.addEventListener('blur', verificarPass)
+    pass1.addEventListener('blur', verificarPass2)
     pass2.addEventListener('blur', verificarPass2)
     ciudad.addEventListener('blur', verificarCiudad)
 
@@ -97,7 +99,8 @@ function verificarMail(e) {
 }
 
 function verificarPass(e) {
-    if (e.target.value.length > 0) {
+    if (e.target.value.length > 0 && firstime) {
+
 
         vcontra = true
 
@@ -106,6 +109,36 @@ function verificarPass(e) {
         eliminarError(e)
 
         contrahaserror = false;
+
+    } else if (e.target.value.length > 0 && !firstime) {
+
+        if (e.target.value == pass2.value) {
+
+            pass1.classList.add("is-valid")
+            pass1.classList.remove("is-invalid")
+            pass2.classList.add("is-valid")
+            pass2.classList.remove("is-invalid")
+
+            vcontra = true
+
+            activarBoton()
+
+        } else {
+            pass1.classList.remove("is-valid")
+            pass1.classList.add("is-invalid")
+            pass2.classList.remove("is-valid")
+            pass2.classList.add("is-invalid")
+
+            mostrarError(e, "Las contraseñas deben coincidir", contrahaserror)
+
+            contrahaserror = true;
+
+            vcontra = false
+
+            desactivarBoton()
+
+        }
+
     } else {
 
 
@@ -120,6 +153,8 @@ function verificarPass2(e) {
 
     if (e.target.value == pass1.value && e.target.value.length > 0) {
 
+        firstime = false;
+
         pass1.classList.add("is-valid")
         pass1.classList.remove("is-invalid")
         pass2.classList.add("is-valid")
@@ -130,6 +165,9 @@ function verificarPass2(e) {
         activarBoton()
 
     } else {
+
+        firstime = false;
+
         pass1.classList.remove("is-valid")
         pass1.classList.add("is-invalid")
         pass2.classList.remove("is-valid")
