@@ -1,17 +1,25 @@
-console.log("Esto funciona bien")
+document.addEventListener('DOMContentLoaded', arrancar)
+
+
+function arrancar() {
+
+
+    console.log("Esto funciona bien")
+
+    arrancarListeners();
+
+    btnEnviar.disabled = true;
+
+}
 
 let btnEnviar = document.querySelector('#btnEnviar');
 
 
 let nombre = document.querySelector('#nombre');
 
-let vnom = false;
-
-
 let nomhaserror = false;
 
-arrancarListeners();
-btnEnviar.disabled = true;
+let vnom = false;
 
 
 
