@@ -31,7 +31,7 @@
     </div>
         <div class="row fondo mx-auto p-5">
             <div class="col mx-auto">
-                <p class="text-light p-5"> El email ya existe</p>
+                <p class="text-light"> El email ya existe</p>
                 <a href="newuser.php" class="btn btn-outline-light">Volver</a>
             </div>
         </div>

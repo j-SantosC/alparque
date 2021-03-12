@@ -31,7 +31,7 @@
     </div>
         <div class="row fondo mx-auto p-5">
             <div class="col mx-auto">
-                <p class="text-light p-5"> El nombre de usuario ya existe</p>
+                <p class="text-light"> El nombre de usuario ya existe</p>
                 <a href="newuser.php" class="btn btn-outline-light">Volver</a>
             </div>
         </div>
