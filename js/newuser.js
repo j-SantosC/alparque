@@ -1,5 +1,3 @@
-console.log("esto va bien")
-
 let usuario = document.querySelector('#usu');
 let mail = document.querySelector('#mail');
 let pass1 = document.querySelector('#pass1');
