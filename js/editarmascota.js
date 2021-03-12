@@ -26,7 +26,6 @@ function arrancarListeners() {
 
     nombre.addEventListener('blur', verificarnom)
     edad.addEventListener('blur', verificaredad)
-    imagen.addEventListener('blur', verificarimg)
     descripcion.addEventListener('blur', verificardesc)
 
 }
