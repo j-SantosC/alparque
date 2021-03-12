@@ -39,9 +39,6 @@ function verificarPass(e) {
 
         activarBoton()
 
-        eliminarError(e)
-
-        contrahaserror = false;
 
     } else if (!firstime) {
 
@@ -61,8 +58,6 @@ function verificarPass(e) {
             pass1.classList.add("is-invalid")
             pass2.classList.remove("is-valid")
             pass2.classList.add("is-invalid")
-
-            contrahaserror = true;
 
             vcontra = false
 
@@ -95,8 +90,6 @@ function verificarPass2(e) {
 
         vcontra2 = true
 
-        eliminarError(e);
-
         activarBoton()
 
     } else {
@@ -107,10 +100,6 @@ function verificarPass2(e) {
         pass1.classList.add("is-invalid")
         pass2.classList.remove("is-valid")
         pass2.classList.add("is-invalid")
-
-        mostrarError(e, "Las contraseñas deben coincidir", contrahaserror)
-
-        contrahaserror = true;
 
         vcontra2 = false
 
@@ -132,31 +121,6 @@ function desactivarBoton() {
     if (vcontra == false || vcontra2 == false) {
 
         btnEnviar.disabled = true;
-
-    }
-}
-
-function mostrarError(e, error, haserror) {
-
-    if (!haserror) {
-
-        let midiv = document.createElement("p");
-        midiv.innerText = `${error}`;
-        midiv.classList.add("text-danger");
-        e.target.parentElement.append(midiv);
-
-    } else {
-        return
-    }
-}
-
-function eliminarError(e) {
-    if (e.target.nextSibling) {
-        while (e.target.nextSibling) {
-            console.log("entro")
-            let error = e.target.nextSibling;
-            error.remove()
-        }
 
     }
 }

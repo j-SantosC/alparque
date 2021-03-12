@@ -108,13 +108,10 @@ function verificarPass(e) {
 
         activarBoton()
 
-        eliminarError(e)
 
-        contrahaserror = false;
+    } else if (!firstime) {
 
-    } else if (e.target.value.length > 0 && !firstime) {
-
-        if (e.target.value == pass2.value) {
+        if (e.target.value.length > 0 && e.target.value == pass2.value) {
 
             pass1.classList.add("is-valid")
             pass1.classList.remove("is-invalid")
@@ -130,8 +127,6 @@ function verificarPass(e) {
             pass1.classList.add("is-invalid")
             pass2.classList.remove("is-valid")
             pass2.classList.add("is-invalid")
-
-            contrahaserror = true;
 
             vcontra = false
 
@@ -174,10 +169,6 @@ function verificarPass2(e) {
         pass1.classList.add("is-invalid")
         pass2.classList.remove("is-valid")
         pass2.classList.add("is-invalid")
-
-        mostrarError(e, "Las contraseñas deben coincidir", contrahaserror)
-
-        contrahaserror = true;
 
         vcontra2 = false
 
