@@ -32,7 +32,7 @@
         <div class="row fondo mx-auto p-5">
             <div class="col mx-auto">
                 <p class="text-light"> El email no existe en nuestra base de datos</p>
-                <a href="newuser.php" class="btn btn-outline-light">Volver</a>
+                <a href="olvidado.php" class="btn btn-outline-light">Volver</a>
             </div>
         </div>
 </body>
