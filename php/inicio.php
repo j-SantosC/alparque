@@ -160,8 +160,8 @@
                 <hr style="height:1px;border-width:0;color:white;background-color:white">
 
                 <h5 class="text-center  text-light my-4">Quien se apunto al parque en <?php echo $ciudadActual ?>?</h5>
-                <select required class="custom-select" name="parque">
-                    <option selected>Elige el Parque </option>
+                <select  id="parque" class="custom-select" name="parque">
+                    <option value="default" selected>Elige el Parque </option>
  
                         <?php
                                 //Mostrando los parques de la ciudad del usuario
@@ -178,7 +178,7 @@
                 </select>
                 
                 
-                <button type ="submit" name="parquesinicio" class="btn btn-outline-light my-4">Ver Horario<i class="fa fa-calendar ml-2"></i></button> <br>
+                <button type ="submit" name="parquesinicio" id="btnEnviar" class="btn btn-outline-light my-4">Ver Horario<i class="fa fa-calendar ml-2"></i></button> <br>
             </form>
         </div>
     </div>
@@ -201,6 +201,9 @@
         </div>          
      </div>
 </div>
+
+<?php $v=rand(10000,99999)?>
+<script src="../js/inicio.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
