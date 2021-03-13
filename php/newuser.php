@@ -56,7 +56,7 @@
                         </select>
                  </div>
                     <a href="newciudad.php" class="text-secondary">Nueva Ciudad</a>        
-                    <div class="mb-3" id="emaildiv">
+                    <div class="mb-3 mt-3" id="emaildiv">
                         <label class="form-label">Email</label>
                         <input type="text" name="email" id="mail" class="form-control">
                     </div>
