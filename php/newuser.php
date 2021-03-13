@@ -36,7 +36,7 @@
                  <div>
                     <label for="exampleInputPassword1" class="form-label">Ciudad</label>
                         <select class="custom-select mb-2" name="ciudad" id="ciud">
-                            <option selected value="default">Selecciona una ciudad ya Registrada</option>
+                            <option selected value="default">Selecciona una ciudad</option>
                             <?php
 
                             include "conexion.php";
