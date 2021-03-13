@@ -52,8 +52,8 @@
                  $imagen= $_GET["imagen"];
 
 
-                 echo '<img src="'.$imagen.'" alt="" class="rounded-circle w-25 mb-3">';
-                echo '<h3 class="text-center text-secondary"><small>Hola</small> ' . $nombre . '</h3>';
+                 echo '<img src="'.$fila[5].'" alt="" class="rounded-circle mb-3" style="height:400px;width:400px;object-fit:cover">';
+                 echo '<h3 class="text-center text-secondary"><small>Hola</small> ' . $nombre . '</h3>';
 
             ?>
         </div>
