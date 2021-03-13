@@ -72,7 +72,7 @@ while($fila=mysqli_fetch_row($resultados)){
            
             $tz = 'Europe/Madrid';
             $timestamp = time();
-            $dt = new DateTime("ahora", new DateTimeZone($tz));
+            $dt = new DateTime("now", new DateTimeZone($tz));
             $dt->setTimestamp($timestamp);
           
             echo "<p class='text-info '>" . $dt->format('F j, Y, g:i a') . "</p>";
