@@ -32,8 +32,11 @@
         <div class="row mb-5">
             <div class="col-xs-12 col-sm-6 mx-auto">
                 <form method="post" class=" mx-auto" action="newuserpost.php">
-
-                 <div>
+                <div class="mb-3" id="usudiv">
+                        <label class="form-label mt-2">Nombre de Usuario</label>
+                        <input type="text" name="usuario" id="usu" class="form-control">
+                 </div>   
+                 <div clas="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Ciudad</label>
                         <select class="custom-select mb-2" name="ciudad" id="ciud">
                             <option selected value="default">Selecciona una ciudad</option>
@@ -52,11 +55,7 @@
 
                         </select>
                  </div>
-                    <a href="newciudad.php" class="text-secondary">Nueva Ciudad</a>
-                    <div class="mb-3" id="usudiv">
-                        <label class="form-label mt-2">Nombre de Usuario</label>
-                        <input type="text" name="usuario" id="usu" class="form-control">
-                    </div>           
+                    <a href="newciudad.php" class="text-secondary">Nueva Ciudad</a>        
                     <div class="mb-3" id="emaildiv">
                         <label class="form-label">Email</label>
                         <input type="text" name="email" id="mail" class="form-control">
