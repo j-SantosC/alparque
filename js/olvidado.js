@@ -9,7 +9,7 @@ let mailhaserror = false;
 btnEnviar.disabled = true;
 
 
-mail.addEventListener('blur', verificarMail)
+email.addEventListener('blur', verificarMail)
 
 function verificarMail(e) {
 
