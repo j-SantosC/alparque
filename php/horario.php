@@ -69,8 +69,13 @@ while($fila=mysqli_fetch_row($resultados)){
     <div class="row">
         <div class="col text-left">
         <?php
-            $hoy = getdate();
-            echo "<p class='text-info '>".$hoy['weekday']. " " . $hoy['hours'] . ":" . $hoy['minutes']. "</p>"
+            //$hoy = getdate();
+            $tz = 'Europe/Madrid';
+            $timestamp = time();
+            $dt = new DateTime("now", new DateTimeZone($tz));
+            $dt->setTimestamp($timestamp);
+          
+            echo "<p class='text-info '>" . $dt->format('d.m.Y, H:i:s') . "</p>";
         ?>
         </div>
     </div>
