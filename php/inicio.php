@@ -160,7 +160,7 @@
                 <hr style="height:1px;border-width:0;color:white;background-color:white">
 
                 <h5 class="text-center  text-light my-4">Quien se apunto al parque en <?php echo $ciudadActual ?>?</h5>
-                <select class="custom-select" name="parque">
+                <select required class="custom-select" name="parque">
                     <option selected>Elige el Parque </option>
  
                         <?php
