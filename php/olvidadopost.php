@@ -4,13 +4,20 @@ include "conexion.php";
 
 $emailDestino = $_POST["email"];
 
-$temp_pass = rand(10000,99999);
+
+$consulta= " SELECT * FROM  usuarios WHERE email='$emailDestino'";
+                            
+$resultados=mysqli_query($conexion,$consulta);
+if(mysqli_num_rows($resultado)>0){ 
+
+    $temp_pass = rand(10000,99999);
 
 $tempPassCifrado = password_hash($temp_pass, PASSWORD_DEFAULT);
         
 $registrar ="UPDATE usuarios SET password='$tempPassCifrado' WHERE email='$emailDestino'";
 
 mysqli_query($conexion,$registrar);
+
 
 
 $asunto = "Recuerar Contraseña alparque";
@@ -29,5 +36,13 @@ if($exito){
 }else{
     header("Location:erroralenviar.php");
 }
+    
+}else{
+
+    header("Location:emailnoexiste.php");
+
+}
+
+
 
 ?>
