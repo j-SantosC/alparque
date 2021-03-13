@@ -75,7 +75,7 @@ while($fila=mysqli_fetch_row($resultados)){
             $dt = new DateTime("now", new DateTimeZone($tz));
             $dt->setTimestamp($timestamp);
           
-            echo "<p class='text-info '>" . $dt->format('d.m.Y, H:i:s') . "</p>";
+            echo "<p class='text-info '>" . $dt->format('F j, Y, g:i a') . "</p>";
         ?>
         </div>
     </div>
