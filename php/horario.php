@@ -69,10 +69,10 @@ while($fila=mysqli_fetch_row($resultados)){
     <div class="row">
         <div class="col text-left">
         <?php
-            //$hoy = getdate();
+           
             $tz = 'Europe/Madrid';
             $timestamp = time();
-            $dt = new DateTime("now", new DateTimeZone($tz));
+            $dt = new DateTime("ahora", new DateTimeZone($tz));
             $dt->setTimestamp($timestamp);
           
             echo "<p class='text-info '>" . $dt->format('F j, Y, g:i a') . "</p>";
