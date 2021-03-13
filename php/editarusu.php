@@ -61,16 +61,18 @@ $query ="SELECT * FROM usuarios WHERE nombre = '$sesion'";
                 <form method="post" class="w-50 mx-auto" action="editarusupost.php">
                     <div class="mb-3" id="emaildiv">
                         <label class="form-label">Cambiar Email</label>
-                        <input type="text" name="email" value="<?php echo $email ?>" id="mail" class="form-control">
+                        <input type="text" name="email" id="email" value="<?php echo $email ?>" id="mail" class="form-control">
                     </div>
                     
-                    <button type="submit" class="btn btn-info btn-block mt-3" sid="btnEnviar">Enviar</button>
+                    <button type="submit" class="btn btn-outline-info btn-block mt-3" id="btnEnviar">Cambiar Email</button>
                     
                     <a href="cambiarcontra.php" class="btn btn-block btn-outline-info mt-4">Cambiar Contraseña</a>
                 </form>
             </div>
         </div>
     </div>
+    <?php $v=rand(10000,99999)?>
+ <script src="../js/editarusu.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
