@@ -70,7 +70,7 @@ while($fila=mysqli_fetch_row($resultados)){
         <div class="col text-left">
         <?php
             $hoy = getdate();
-            echo "<p class='text-info '>".$hoy['weekday']. " " . $hoy['hours']. ":" . $hoy['minutes']. "</p>"
+            echo "<p class='text-info '>".$hoy['weekday']. " " . $hoy['hours']+1 . ":" . $hoy['minutes']. "</p>"
         ?>
         </div>
     </div>
