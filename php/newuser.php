@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="container ">
-        <div class="row mb-5">
+        <div class="row mb-5 w-75">
             <div class="col">
                 <form method="post" class=" mx-auto" action="newuserpost.php">
 
