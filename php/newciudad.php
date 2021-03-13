@@ -33,7 +33,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 mx-auto">
                 <form method="post" class=" mx-auto" action="newciudadpost.php">
                     <div class="mb-3">
                         <label class="form-label">Nombre de la Ciudad o Pueblo</label>
