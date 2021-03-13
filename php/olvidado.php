@@ -39,7 +39,7 @@
                 <form method="post" class=" mx-auto" action="olvidadopost.php">
                     <div class="mb-3">
                         <label class="form-label">Introduce tu email</label>
-                        <input type="text" name="email" class="form-control" id="contra">
+                        <input type="text" name="email" class="form-control" id="email">
                     </div>
                     
                     <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
@@ -49,7 +49,8 @@
     </div>
     
 </div>
-<!-- <script src="../js/newcontra.js"></script> -->
+<?php $v=rand(10000,99999)?>
+ <script src="../js/olvidado.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
