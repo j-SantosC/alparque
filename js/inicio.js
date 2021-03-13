@@ -3,6 +3,8 @@ let parque = document.querySelector("#parque");
 
 let vparque = false;
 
+btnEnviar.disabled = true;
+
 parque.addEventListener('blur', verificarParque);
 
 function verificarParque(e) {
