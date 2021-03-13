@@ -91,7 +91,7 @@
 
                         // Info del Perfil
 
-                        echo '<img src="'.$fila[5].'" alt="" class="w-75 rounded-circle mb-3" style="height:250px;width:250px;object-fit:cover">';
+                        echo '<img src="'.$fila[5].'" alt="" class="rounded-circle mb-3" style="height:250px;width:250px;object-fit:cover">';
                         echo '<h3 class="text-center text-secondary">' . $fila[1] . ' <small> de '.$fila[7].'</small></h3>';
                         echo  '<p class="text-secondary">'.$fila[3]. ' | '.$fila[2].' años </p>';
                         echo  '<a href="quienlikes.php?perro='. $fila[0] .'" class="text-info">'. $totalLikes .' likes</a>';
