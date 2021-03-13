@@ -52,7 +52,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col">
                 <form method="post" class="w-50 mx-auto" action="newcontrapost.php">
                     <div class="mb-3">
