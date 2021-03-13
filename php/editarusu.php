@@ -56,7 +56,7 @@ $query ="SELECT * FROM usuarios WHERE nombre = '$sesion'";
                 </div>
             </div>
             <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col">
                 <form method="post" class="w-50 mx-auto" action="editarusupost.php">
                     <div class="mb-3" id="emaildiv">
