@@ -35,7 +35,7 @@
 
                  <div>
                     <label for="exampleInputPassword1" class="form-label">Ciudad</label>
-                        <select class="custom-select " name="ciudad" id="ciud">
+                        <select class="custom-select mb-2" name="ciudad" id="ciud">
                             <option selected value="default">Selecciona una ciudad ya Registrada</option>
                             <?php
 
@@ -52,9 +52,9 @@
 
                         </select>
                  </div>
-                    <a href="newciudad.php" class="text-secondary my-3">Nueva Ciudad</a>
+                    <a href="newciudad.php" class="text-secondary">Nueva Ciudad</a>
                     <div class="mb-3" id="usudiv">
-                        <label class="form-label">Nombre de Usuario</label>
+                        <label class="form-label mt-2">Nombre de Usuario</label>
                         <input type="text" name="usuario" id="usu" class="form-control">
                     </div>           
                     <div class="mb-3" id="emaildiv">
