@@ -52,7 +52,7 @@
 
                         </select>
                  </div>
-                    <a href="newciudad.php" class="text-secondary my-1">Nueva Ciudad</a>
+                    <a href="newciudad.php" class="text-secondary my-3">Nueva Ciudad</a>
                     <div class="mb-3" id="usudiv">
                         <label class="form-label">Nombre de Usuario</label>
                         <input type="text" name="usuario" id="usu" class="form-control">
