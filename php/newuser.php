@@ -32,24 +32,8 @@
         <div class="row mb-5">
             <div class="col">
                 <form method="post" class=" mx-auto" action="newuserpost.php">
-                    <div class="mb-3" id="emaildiv">
-                        <label class="form-label">Email</label>
-                        <input type="text" name="email" id="mail" class="form-control">
-                    </div>
-                    <div class="mb-3" id="usudiv">
-                        <label class="form-label">Nombre de Usuario</label>
-                        <input type="text" name="usuario" id="usu" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" name="password1" id="pass1" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Confirma Password</label>
-                        <input type="password" name="password2" id="pass2" class="form-control" id="exampleInputPassword1">
-                    </div>
 
-                 <div class="">
+                 <div>
                     <label for="exampleInputPassword1" class="form-label">Ciudad</label>
                         <select class="custom-select " name="ciudad" id="ciud">
                             <option selected value="default">Selecciona una ciudad ya Registrada</option>
@@ -68,8 +52,25 @@
 
                         </select>
                  </div>
-                    <a href="newciudad.php" class="text-secondary">Nueva Ciudad</a>
+                    <a href="newciudad.php" class="text-secondary my-1">Nueva Ciudad</a>
+                    <div class="mb-3" id="usudiv">
+                        <label class="form-label">Nombre de Usuario</label>
+                        <input type="text" name="usuario" id="usu" class="form-control">
+                    </div>           
+                    <div class="mb-3" id="emaildiv">
+                        <label class="form-label">Email</label>
+                        <input type="text" name="email" id="mail" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" name="password1" id="pass1" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Confirma Password</label>
+                        <input type="password" name="password2" id="pass2" class="form-control" id="exampleInputPassword1">
+                    </div>
 
+                 
                     <button type="submit" class="btn btn-info btn-block my-3" id="btnEnviar">Enviar</button>
                     <a href="../html/login.html" class="text-secondary">Ya tengo Cuenta</a>
                 </form>
