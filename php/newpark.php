@@ -45,8 +45,8 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <form method="post" class="w-50 mx-auto" action="newparkpost.php">
+            <div class="col-md-6 mx-auto">
+                <form method="post" class="mx-auto" action="newparkpost.php">
                     <div class="mb-3">
                         <label class="form-label">Nombre del Parque</label>
                         <input type="text" id="nombre" name="nombre" class="form-control">

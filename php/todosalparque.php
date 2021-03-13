@@ -73,7 +73,7 @@
                     ?>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-6 mx-auto">
+                <div class="col-md-6 mx-auto">
                    
                      <form  action="todosalparquepost.php" method="post">
                      <div class="form-group">

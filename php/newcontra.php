@@ -53,8 +53,8 @@
     </div>
     <div class="container">
         <div class="row mb-5">
-            <div class="col">
-                <form method="post" class="w-50 mx-auto" action="newcontrapost.php">
+            <div class="col-md-6 mx-auto">
+                <form method="post" class="mx-auto" action="newcontrapost.php">
                     <div class="mb-3">
                         <label class="form-label">Nueva Contraseña</label>
                         <input type="password" name="contra" class="form-control" id="contra">

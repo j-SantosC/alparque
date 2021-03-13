@@ -52,7 +52,7 @@
     
         echo ' <div class="row mt-5">';
                 
-            echo ' <div class="col-8 mx-auto text-center">';
+            echo ' <div class="col-md-6 mx-auto text-center">';
                   
             echo '<hr>';
 

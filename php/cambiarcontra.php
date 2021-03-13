@@ -57,8 +57,8 @@
             </div>
     <div class="container">
         <div class="row my-5">
-            <div class="col">
-                <form method="post" class="w-50 mx-auto" action="cambiarcontrapost.php">
+            <div class="col-md-6 mx-auto">
+                <form method="post" class="mx-auto" action="cambiarcontrapost.php">
                     <div class="mb-3" id="emaildiv">
                         <label class="form-label">Contraseña Actual</label>
                         <input type="password" name="contra"  id="contra" class="form-control">

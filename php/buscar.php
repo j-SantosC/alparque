@@ -50,7 +50,7 @@
     <?php
 
 echo '<div class="row">
-        <div class="col-10 mx-auto">
+        <div class="col-md-6 mx-auto">
        
                  <form class="my-3" action="" method="post">
                     <label>Busca un perro:</label>
@@ -87,7 +87,6 @@ echo '<div class="row">
     ?>
        
 </div>
-<!-- <script src="../js/alparque.js"></script> -->
 </body>
 
 </html>
