@@ -31,7 +31,7 @@
     </div>
         <div class="row fondo mx-auto p-5">
             <div class="col mx-auto">
-                <p class="text-light"> El email no se existe en nuestra base de datos</p>
+                <p class="text-light">Ha habido un error al enviar el mensaje</p>
                 <a href="newuser.php" class="btn btn-outline-light">Volver</a>
             </div>
         </div>

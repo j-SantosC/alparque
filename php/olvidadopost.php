@@ -27,7 +27,7 @@ if($exito){
     header("Location:../html/login.html");
 
 }else{
-    header("Location:emailnoexiste.php");
+    header("Location:erroralenviar.php");
 }
 
 ?>
