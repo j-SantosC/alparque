@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="container ">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col">
                 <form method="post" class=" mx-auto" action="newuserpost.php">
                     <div class="mb-3" id="emaildiv">
@@ -68,10 +68,10 @@
 
                         </select>
                  </div>
-                    <a href="newciudad.php" class="text-secondary"><small>Nueva Ciudad</small></a>
+                    <a href="newciudad.php" class="text-secondary">Nueva Ciudad</a>
 
                     <button type="submit" class="btn btn-info btn-block mt-3" id="btnEnviar">Enviar</button>
-                    <small><a href="../html/login.html" class="text-secondary">Ya tengo Cuenta</a></small>
+                    <a href="../html/login.html" class="text-secondary">Ya tengo Cuenta</a>
                 </form>
             </div>
         </div>
