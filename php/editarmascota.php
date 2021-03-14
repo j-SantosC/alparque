@@ -46,6 +46,8 @@ if(!isset($_POST["actualizar"])){
         $carpeta_destino = $_SERVER['DOCUMENT_ROOT'].'/img/mascotas/';
         $ruta_relativa = "../img/mascotas/";
 
+        $nombre_archivo = substr($imagen, strrpos($imagen, '/') + 1);
+
         if($nombre_foto){
 
                 if($size_foto<=5000000){
@@ -57,8 +59,8 @@ if(!isset($_POST["actualizar"])){
             
             // este esle if no funciona
 
-            }else if($imagen!=""){
-                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$imagen', descripcion='$descripcion' WHERE id='$id'";
+            }else if($imagen){
+                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$carpeta_destino$nombre_archivo', descripcion='$descripcion' WHERE id='$id'";
 
             }else{
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='../img/defaultdog.jpeg', descripcion='$descripcion' WHERE id=$id";
