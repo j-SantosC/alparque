@@ -59,7 +59,7 @@ if(!isset($_POST["actualizar"])){
 
 
     mysqli_query($conexion,$sql);
-    header("Location:indice.php");
+    header("Location:inicio.php");
 
 }
 ?>
