@@ -30,6 +30,7 @@ if(!isset($_POST["actualizar"])){
     $nombre=$_GET["nombre"];
     $edad=$_GET["edad"];
     $descripcion=$_GET["descripcion"];
+    $imagen=$_GET["img"];
 
 } else{
     
@@ -52,7 +53,11 @@ if(!isset($_POST["actualizar"])){
                 move_uploaded_file($_FILES['foto']['tmp_name'],$carpeta_destino.$nombre_foto);
 
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$ruta_relativa$nombre_foto', descripcion='$descripcion' WHERE id='$id'";
-                }  
+                } 
+                
+            }else if($imagen){
+                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$imagen', descripcion='$descripcion' WHERE id='$id'";
+
             }else{
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='../img/defaultdog.jpeg', descripcion='$descripcion' WHERE id=$id";
             } 
