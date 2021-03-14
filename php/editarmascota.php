@@ -59,7 +59,7 @@ if(!isset($_POST["actualizar"])){
 
 
     mysqli_query($conexion,$sql);
-    header("Location:mascotas.php");
+    header("Location:indice.php");
 
 }
 ?>
@@ -101,7 +101,7 @@ if(!isset($_POST["actualizar"])){
                     <input type="text" class="form-control" id="edad" name="edad" value="<?php echo $edad  ?>">
                 </div>
                 <div class="form-group">
-                    <label>Foto</label>
+                    <label>Foto</label><br>
                     <input type="file" id="imagen" name="foto" value="<?php echo $img  ?>">
                 </div>
                 <div class="form-group">
