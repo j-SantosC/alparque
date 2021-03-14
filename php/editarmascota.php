@@ -46,9 +46,6 @@ if(!isset($_POST["actualizar"])){
         $carpeta_destino = $_SERVER['DOCUMENT_ROOT'].'/img/mascotas/';
         $ruta_relativa = "../img/mascotas/";
 
-        // La siguiente linea de codigo captura lo que hay detras del ultimo "/" - El nombre del archivo
-        $nombre_archivo = substr($imagen, strrpos($imagen, '/') + 1);
-
         if($nombre_foto){
 
                 if($size_foto<=5000000){
@@ -58,12 +55,14 @@ if(!isset($_POST["actualizar"])){
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$ruta_relativa$nombre_foto', descripcion='$descripcion' WHERE id='$id'";
                 } 
             
-            //En caso de que no se haya subido ningun archivo, 
+            //En caso de que no se haya subido ningun archivo:
 
             }else if(!$imagen){
-               // $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img=$carpeta_destino.$nombre_archivo, descripcion='$descripcion' WHERE id='$id'";
+             
                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', descripcion='$descripcion' WHERE id=$id";
                 
+            // En ultimo caso se pone la foto del perro por defecto:
+
             }else{
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='../img/defaultdog.jpeg', descripcion='$descripcion' WHERE id=$id";
             } 
