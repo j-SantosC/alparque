@@ -58,7 +58,7 @@ if(!isset($_POST["actualizar"])){
             
             // este esle if no funciona
 
-            }else if($imagen){
+            }else if($imagen!=""){
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$imagen', descripcion='$descripcion' WHERE id='$id'";
 
             }else{
