@@ -67,7 +67,8 @@ if(!isset($_POST["actualizar"])){
 
 
     mysqli_query($conexion,$sql);
-    header("Location:inicio.php");
+    echo $imagen;
+   // header("Location:inicio.php");
 
 }
 ?>
