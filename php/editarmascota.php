@@ -58,11 +58,12 @@ if(!isset($_POST["actualizar"])){
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$ruta_relativa$nombre_foto', descripcion='$descripcion' WHERE id='$id'";
                 } 
             
-            // este esle if no funciona
+            //En caso de que no se haya subido ningun archivo, 
 
             }else if(!$imagen){
-                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img=$carpeta_destino.$nombre_archivo, descripcion='$descripcion' WHERE id='$id'";
-
+               // $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img=$carpeta_destino.$nombre_archivo, descripcion='$descripcion' WHERE id='$id'";
+               $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', descripcion='$descripcion' WHERE id=$id";
+                
             }else{
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='../img/defaultdog.jpeg', descripcion='$descripcion' WHERE id=$id";
             } 
