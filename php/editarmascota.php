@@ -33,7 +33,8 @@ if(!isset($_POST["actualizar"])){
     $imagen=$_GET["img"];
 
 } else{
-    
+   
+        $imagen=$_GET["img"];
         $id=$_POST["id"];
         $nombre=$_POST["nombre"];
         $edad=$_POST["edad"];
@@ -54,7 +55,9 @@ if(!isset($_POST["actualizar"])){
 
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$ruta_relativa$nombre_foto', descripcion='$descripcion' WHERE id='$id'";
                 } 
-                
+            
+            // este esle if no funciona
+
             }else if($imagen){
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$imagen', descripcion='$descripcion' WHERE id='$id'";
 
