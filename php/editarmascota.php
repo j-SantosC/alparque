@@ -29,7 +29,6 @@ if(!isset($_POST["actualizar"])){
     $id=$_GET["id"];
     $nombre=$_GET["nombre"];
     $edad=$_GET["edad"];
-    $img=$_GET["img"];
     $descripcion=$_GET["descripcion"];
 
 } else{
