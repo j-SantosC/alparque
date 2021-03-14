@@ -24,17 +24,17 @@ if(!isset($_SESSION["usuario"])){
 
 include ("conexion.php");
 
+$imagen=$_GET["img"];
+
 if(!isset($_POST["actualizar"])){
 
     $id=$_GET["id"];
     $nombre=$_GET["nombre"];
     $edad=$_GET["edad"];
     $descripcion=$_GET["descripcion"];
-    $imagen=$_GET["img"];
 
 } else{
    
-        $imagen=$_GET["img"];
         $id=$_POST["id"];
         $nombre=$_POST["nombre"];
         $edad=$_POST["edad"];
