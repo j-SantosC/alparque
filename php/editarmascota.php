@@ -42,14 +42,13 @@ if(!isset($_POST["actualizar"])){
 
         $nombre_foto = $_FILES['foto']['name'];
         $size_foto = $_FILES['foto']['size'];
+        
+        $carpeta_destino = $_SERVER['DOCUMENT_ROOT'].'/img/mascotas/';
+        $ruta_relativa = "../img/mascotas/";
 
         if($nombre_foto){
 
                 if($size_foto<=5000000){
-
-                $carpeta_destino = $_SERVER['DOCUMENT_ROOT'].'/img/mascotas/';
-
-                $ruta_relativa = "../img/mascotas/";
 
                 move_uploaded_file($_FILES['foto']['tmp_name'],$carpeta_destino.$nombre_foto);
 
