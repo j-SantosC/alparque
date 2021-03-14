@@ -54,7 +54,7 @@ if(!isset($_POST["actualizar"])){
 
                 move_uploaded_file($_FILES['foto']['tmp_name'],$carpeta_destino.$nombre_foto);
 
-                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$ruta_relativa$nombre_foto', descripcion='$descripcion' WHERE id='$id'";
+                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$ruta_relativa$nombre_archivo', descripcion='$descripcion' WHERE id='$id'";
                 } 
             
             // este esle if no funciona
