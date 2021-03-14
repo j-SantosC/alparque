@@ -46,6 +46,7 @@ if(!isset($_POST["actualizar"])){
         $carpeta_destino = $_SERVER['DOCUMENT_ROOT'].'/img/mascotas/';
         $ruta_relativa = "../img/mascotas/";
 
+        // La siguiente linea de codigo captura lo que hay detras del ultimo "/" - El nombre del archivo
         $nombre_archivo = substr($imagen, strrpos($imagen, '/') + 1);
 
         if($nombre_foto){
@@ -59,7 +60,7 @@ if(!isset($_POST["actualizar"])){
             
             // este esle if no funciona
 
-            }else if($imagen != ""){
+            }else if(!$imagen){
                 $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='$carpeta_destino$nombre_archivo', descripcion='$descripcion' WHERE id='$id'";
 
             }else{
