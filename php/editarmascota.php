@@ -51,12 +51,13 @@ if(!isset($_POST["actualizar"])){
                 $ruta_relativa = "../img/mascotas/";
 
                  move_uploaded_file($_FILES['foto']['tmp_name'],$carpeta_destino.$nombre_foto);
+            }  
             }else{
                 
                 $registrar ="INSERT INTO mascotas (nombre,edad,sexo,hora,img,descripcion,propietario,parque,date)
                 VALUES ('$nombre','$edad','$sexo',0,'../img/defaultdog.jpeg','$descripcion','$propietario',1,'0000-00-00')";
         
-}
+            }
         }  
 
 
@@ -64,7 +65,7 @@ if(!isset($_POST["actualizar"])){
     mysqli_query($conexion,$sql);
     header("Location:mascotas.php");
 
-}
+
 ?>
 
     <div class="container mt-3">
