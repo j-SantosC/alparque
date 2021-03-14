@@ -54,8 +54,8 @@ if(!isset($_POST["actualizar"])){
 
                 }  
             }else{
-                $registrar ="INSERT INTO mascotas (nombre,edad,sexo,hora,img,descripcion,propietario,parque,date)
-                         VALUES ('$nombre','$edad','$sexo',0,'../img/defaultdog.jpeg','$descripcion','$propietario',1,'0000-00-00')";
+                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='../img/defaultdog.jpeg', descripcion='$descripcion' WHERE id='$id'";
+                mysqli_query($conexion,$sql);
             } 
 
 
