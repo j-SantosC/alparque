@@ -67,6 +67,10 @@ echo '<div class="row">
                     echo '<div class="row">';
                         $query="SELECT * FROM mascotas WHERE nombre LIKE '%" . $termino . "%'";
                         $resultados=mysqli_query($conexion,$query);
+                        if(mysqli_num_rows($resultadosInicio)==0){
+                            echo '"<h5>No hay Perros Registrados con ese Nombre</h5>';
+                        }else{
+
                         while($fila=mysqli_fetch_row($resultados)){ 
                             echo '
                                     <div class="col-xs-12 col-sm-4  ">
@@ -82,6 +86,7 @@ echo '<div class="row">
                                     ';
                                 } 
                     echo'</div>';
+                    }
                 }
         
     ?>
