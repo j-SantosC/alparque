@@ -68,7 +68,7 @@ echo '<div class="row">
                         $query="SELECT * FROM mascotas WHERE nombre LIKE '%" . $termino . "%'";
                         $resultados=mysqli_query($conexion,$query);
                         if(mysqli_num_rows($resultados)==0){
-                            echo '"<p class="text-secondary text-center">No hay Perros Registrados con ese Nombre</p>';
+                            echo '<p class="text-secondary text-center">No hay Perros Registrados con ese Nombre</p>';
                         }else{
 
                         while($fila=mysqli_fetch_row($resultados)){ 
