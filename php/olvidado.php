@@ -44,6 +44,7 @@
                     
                     <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
+                <a href="../index.html"><p class="text-secondary"> Volver</p></a>
             </div>
         </div>
     </div>
