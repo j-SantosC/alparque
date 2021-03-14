@@ -53,7 +53,7 @@ if(!isset($_POST["actualizar"])){
 
                 }  
             }else{
-                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='../img/defaultdog.jpeg', descripcion='$descripcion' WHERE id='$id'";
+                $sql = "UPDATE mascotas SET nombre='$nombre',edad ='$edad', img='../img/defaultdog.jpeg', descripcion='$descripcion' WHERE id=$id";
                 mysqli_query($conexion,$sql);
             } 
 
