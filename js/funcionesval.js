@@ -1,4 +1,4 @@
-export function mostrarError(e, error, haserror) {
+function mostrarError(e, error, haserror) {
 
     if (!haserror) {
 
@@ -12,7 +12,7 @@ export function mostrarError(e, error, haserror) {
     }
 }
 
-export function eliminarError(e) {
+function eliminarError(e) {
     if (e.target.nextSibling) {
         while (e.target.nextSibling) {
             let error = e.target.nextSibling;
@@ -21,3 +21,4 @@ export function eliminarError(e) {
 
     }
 }
+export { mostrarError, eliminarError }
