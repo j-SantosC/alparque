@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', arrancar)
 function arrancar() {
 
 
-    console.log("Esto funciona jodidamente bien")
-
     arrancarListeners();
 
     btnEnviar.disabled = true;

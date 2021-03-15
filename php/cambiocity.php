@@ -47,7 +47,7 @@
         <div class="row my-5">
             <div class="col-md-6 mx-auto">
                 <form method="post" class=" mx-auto" action="cambiocitypost.php">
-                <select class="custom-select" id="ciudad" name="city">
+                <select class="custom-select" id="nombre" name="city">
                         <option value="default" selected>Selecciona una ciudad ya Registrada</option>
                         <?php
 
