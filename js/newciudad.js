@@ -28,7 +28,7 @@ function arrancarListeners() {
 }
 
 function verificarnombre(e) {
-    if (e.target.value.length > 0) {
+    if (e.target.value != "default") {
         e.target.classList.remove("is-invalid")
         e.target.classList.add("is-valid")
 
