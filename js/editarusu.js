@@ -11,7 +11,7 @@ let mailhaserror = false;
 btnEnviar.disabled = true;
 
 
-email.addEventListener('blur', verificarMail)
+email.addEventListener('blur', verificarMail(e))
 
 
 function activarBoton() {
