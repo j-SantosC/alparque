@@ -22,5 +22,36 @@ function eliminarError(e) {
     }
 }
 
+function verificarMail(e) {
 
-export { mostrarError, eliminarError }
+    const re = /^\S+@\S+\.\S+$/;
+
+    if (re.test(e.target.value)) {
+
+        e.target.classList.remove("is-invalid")
+        e.target.classList.add("is-valid")
+        vmail = true
+
+        activarBoton()
+
+        eliminarError(e)
+
+        mailhaserror = false;
+
+    } else {
+        e.target.classList.remove("is-valid")
+        e.target.classList.add("is-invalid")
+
+        vmail = false
+
+        desactivarBoton()
+
+        mostrarError(e, "El email no es correcto", mailhaserror)
+
+        mailhaserror = true;
+    }
+}
+
+
+
+export { mostrarError, eliminarError, verificarMail }
