@@ -22,7 +22,7 @@ function eliminarError(e) {
     }
 }
 
-function verificarMail(e) {
+function verificarMail(e, mailhaserror, vmail) {
 
     const re = /^\S+@\S+\.\S+$/;
 
