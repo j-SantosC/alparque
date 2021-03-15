@@ -127,7 +127,7 @@
         </div>
     </div>
 </div>
-<!-- <script src="../js/alparque.js"></script> -->
+<script type="module" src="../js/alparque.js"></script>
 </body>
 
 </html>
