@@ -1,3 +1,5 @@
+import { mostrarError, eliminarError } from '../js/funcionesval.js';
+
 console.log("prueba linkado")
 
 let usuario = document.querySelector('#usu');
@@ -216,30 +218,6 @@ function desactivarBoton() {
     if (vusu == false || vmail == false || vcontra == false || vcontra2 == false || vciudad == false) {
 
         btnEnviar.disabled = true;
-
-    }
-}
-
-function mostrarError(e, error, haserror) {
-
-    if (!haserror) {
-
-        let midiv = document.createElement("p");
-        midiv.innerText = `${error}`;
-        midiv.classList.add("text-danger");
-        e.target.parentElement.append(midiv);
-
-    } else {
-        return
-    }
-}
-
-function eliminarError(e) {
-    if (e.target.nextSibling) {
-        while (e.target.nextSibling) {
-            let error = e.target.nextSibling;
-            error.remove()
-        }
 
     }
 }

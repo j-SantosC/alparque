@@ -72,7 +72,7 @@ $query ="SELECT * FROM usuarios WHERE nombre = '$sesion'";
         </div>
     </div>
     <?php $v=rand(10000,99999)?>
- <script src="../js/editarusu.js?v=<?php echo $v ?>"></script>
+ <script type="module" src="../js/editarusu.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>

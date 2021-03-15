@@ -1,3 +1,5 @@
+import { mostrarError, eliminarError } from '../js/funcionesval.js';
+
 console.log("Funciona en link no me jodas");
 
 let nombre = document.querySelector('#nom');
@@ -92,34 +94,6 @@ function verificaredad(e) {
     }
 }
 
-function verificarfoto(e) {
-    if (e.target.value.length > 0) {
-        e.target.classList.remove("is-invalid")
-        e.target.classList.add("is-valid")
-
-        vfoto = true
-        console.log("vfoto =" + vfoto);
-
-        activarBoton()
-
-        eliminarError(e)
-
-        fotohaserror = false;
-    } else {
-        e.target.classList.remove("is-valid")
-        e.target.classList.add("is-invalid")
-
-
-        mostrarError(e, "La foto es obligatoria", edadhaserror)
-
-        vfotohaserror = true;
-
-        vfoto = false
-
-        desactivarBoton()
-
-    }
-}
 
 function verificardesc(e) {
     if (e.target.value.length > 0) {
@@ -164,30 +138,6 @@ function desactivarBoton() {
     if (vnom == false || vedad == false || vfoto == false || vdesc == false) {
 
         btnEnviar.disabled = true;
-
-    }
-}
-
-function mostrarError(e, error, haserror) {
-
-    if (!haserror) {
-
-        let midiv = document.createElement("p");
-        midiv.innerText = `${error}`;
-        midiv.classList.add("text-danger");
-        e.target.parentElement.append(midiv);
-
-    } else {
-        return
-    }
-}
-
-function eliminarError(e) {
-    if (e.target.nextSibling) {
-        while (e.target.nextSibling) {
-            let error = e.target.nextSibling;
-            error.remove()
-        }
 
     }
 }

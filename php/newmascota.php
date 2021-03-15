@@ -85,7 +85,7 @@
         </div>
     </div>
     <?php $v=rand(10000,99999)?>
-    <script src="../js/newmascota.js?v=<?php echo $v ?>"></script>
+    <script type ="module" src="../js/newmascota.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
