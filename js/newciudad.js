@@ -23,11 +23,11 @@ let vnom = false;
 
 function arrancarListeners() {
 
-    nombre.addEventListener('blur', verificarnombre)
+    nombre.addEventListener('blur', verificarciudad)
 
 }
 
-function verificarnombre(e) {
+function verificarciudad(e) {
     if (e.target.value != "default") {
         e.target.classList.remove("is-invalid")
         e.target.classList.add("is-valid")
@@ -44,7 +44,7 @@ function verificarnombre(e) {
         e.target.classList.add("is-invalid")
 
 
-        mostrarError(e, "El nombre  es Obligatorio", nomhaserror)
+        mostrarError(e, "Selecciona una ciudad", nomhaserror)
 
         nomhaserror = true;
 

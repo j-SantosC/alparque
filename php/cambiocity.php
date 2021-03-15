@@ -47,22 +47,24 @@
         <div class="row my-5">
             <div class="col-md-6 mx-auto">
                 <form method="post" class=" mx-auto" action="cambiocitypost.php">
-                <select class="custom-select" id="nombre" name="city">
-                        <option value="default" selected>Selecciona una ciudad ya Registrada</option>
-                        <?php
+                <div>
+                    <select class="custom-select" id="nombre" name="city">
+                            <option value="default" selected>Selecciona una ciudad ya Registrada</option>
+                            <?php
 
-                        include "conexion.php";
+                            include "conexion.php";
 
-                            $consulta= " SELECT * FROM  ciudades ORDER BY nombre";
-                        
-                            $resultados=mysqli_query($conexion,$consulta);
-                            while($fila=mysqli_fetch_row($resultados)){  
+                                $consulta= " SELECT * FROM  ciudades ORDER BY nombre";
+                            
+                                $resultados=mysqli_query($conexion,$consulta);
+                                while($fila=mysqli_fetch_row($resultados)){  
 
-                                echo '<option value="'.$fila[0].'">'.$fila[1].'</option>';
-                            }
-                        ?>
+                                    echo '<option value="'.$fila[0].'">'.$fila[1].'</option>';
+                                }
+                            ?>
 
-                    </select>
+                        </select>
+                </div>
                     <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
                 <a href="newciudad.php" class="text-secondary mt-2">Nueva Ciudad</a>   
