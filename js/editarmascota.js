@@ -1,3 +1,5 @@
+import { mostrarError, eliminarError } from '../js/funcionesval.js';
+
 let btnEnviar = document.querySelector('#btnEnviar');
 
 
@@ -130,30 +132,6 @@ function desactivarBoton() {
     if (vnom == false || vedad == false || vdesc == false) {
 
         btnEnviar.disabled = true;
-
-    }
-}
-
-function mostrarError(e, error, haserror) {
-
-    if (!haserror) {
-
-        let midiv = document.createElement("p");
-        midiv.innerText = `${error}`;
-        midiv.classList.add("text-danger");
-        e.target.parentElement.append(midiv);
-
-    } else {
-        return
-    }
-}
-
-function eliminarError(e) {
-    if (e.target.nextSibling) {
-        while (e.target.nextSibling) {
-            let error = e.target.nextSibling;
-            error.remove()
-        }
 
     }
 }

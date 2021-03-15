@@ -125,7 +125,7 @@ if(!isset($_POST["actualizar"])){
         </div>
     </div>
     <?php $v=rand(10000,99999)?>
-    <script src="../js/editarmascota.js?v=<?php echo $v ?>"></script>
+    <script type = "module" src="../js/editarmascota.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
