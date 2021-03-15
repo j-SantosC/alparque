@@ -1,4 +1,4 @@
-import { mostrarError, eliminarError } from '/funionesval.js';
+import { mostrarError, eliminarError } from '/funcionesval.js';
 
 document.addEventListener('DOMContentLoaded', arrancar)
 
