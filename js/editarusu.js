@@ -1,4 +1,4 @@
-import { mostrarError, eliminarError, verificarMail } from '../js/funcionesval.js';
+import { mostrarError, eliminarError } from '../js/funcionesval.js';
 
 let btnEnviar = document.querySelector('#btnEnviar');
 
