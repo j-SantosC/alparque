@@ -65,12 +65,14 @@
                     </select>
                     <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
+                <a href="newciudad.php" class="text-secondary mt-2">Nueva Ciudad</a>   
             </div>
         </div>
     </div>
     
 </div>
-<!-- <script src="../js/newciudad.js"></script> -->
+<?php $v=rand(10000,99999)?>
+    <script src="../js/newciudad.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
