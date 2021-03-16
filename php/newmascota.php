@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
 
-    <link src="../node_modules/sweetalert2/dist/sweetalert2.min.css"></link>
+    <link rel="stylesheet" src="../node_modules/sweetalert2/dist/sweetalert2.min.css"></link>
 
 </head>
 
