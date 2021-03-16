@@ -151,7 +151,7 @@ function estasSeguro(e) {
                 'success'
             )
             setTimeout(() => {
-                e.target.submit()
+                miform.submit()
             }, 2000)
 
         }
