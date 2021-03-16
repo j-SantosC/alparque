@@ -1,5 +1,5 @@
 import { mostrarError, eliminarError } from '../js/funcionesval.js';
-import Swal from 'sweetalert2';
+const Swal = require('sweetalert2');
 
 console.log("linked");
 
