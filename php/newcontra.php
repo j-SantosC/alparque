@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 </head>
 <script>
+    import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
+
     function estasSeguro() {
     Swal.fire({
         title: 'Estas Seguro?',
@@ -33,7 +35,7 @@
             )
         }
     })
-}
+}           
 </script>
 <body>
 <div class="container mt-3">
