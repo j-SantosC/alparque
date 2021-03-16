@@ -1,6 +1,6 @@
+console.log("linkado")
+
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
-
-
 
 
 let pass1 = document.querySelector('#contra');
