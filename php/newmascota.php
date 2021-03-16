@@ -84,10 +84,10 @@
 
                 <br>
                     <button type ="submit" id="btnEnviar"name="save"class="btn btn-outline-primary btn-block mt-3">Guardar<i class="fa fa-save ml-2"></i></button>
-                    <button class="btn btn-primary" id="sweet">Sweet Alert</button>
-                   
-            </form>
-        </div>
+                    
+                </form>
+            </div>
+            <button class="btn btn-primary" id="sweet">Sweet Alert</button>
     </div>
     <?php $v=rand(10000,99999)?>
     <script type ="module" src="../js/newmascota.js?v=<?php echo $v ?>"></script>
