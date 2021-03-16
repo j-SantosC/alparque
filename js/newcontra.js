@@ -146,7 +146,10 @@ function estasSeguro() {
                 'Usala para acceder a partir de ahora.',
                 'success'
             )
-            miform.submit()
+            setTimeout(() => {
+                miform.submit()
+            }, 2000)
+
         }
     })
 }
