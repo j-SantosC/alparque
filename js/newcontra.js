@@ -27,7 +27,7 @@ function arrancarListeners() {
     pass1.addEventListener('blur', verificarPass)
     pass2.addEventListener('blur', verificarPass2)
 
-    btnEmviar.addEventListener('click', estasSeguro)
+    btnEnviar.addEventListener('click', estasSeguro)
 
 }
 
