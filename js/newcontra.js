@@ -151,7 +151,7 @@ function estasSeguro(e) {
                 'success'
             )
             setTimeout(() => {
-                e.submit()
+                e.target.submit()
             }, 2000)
 
         }
