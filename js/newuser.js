@@ -1,6 +1,6 @@
 import { mostrarError, eliminarError } from '../js/funcionesval.js';
 
-console.log("prueba linkado")
+console.log("lol");
 
 let usuario = document.querySelector('#usu');
 let mail = document.querySelector('#mail');
