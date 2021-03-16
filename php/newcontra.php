@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 </head>
-<script>
+<script type="module">
     import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
     function estasSeguro() {
