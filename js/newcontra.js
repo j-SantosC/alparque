@@ -23,7 +23,7 @@ function arrancarListeners() {
 
     pass1.addEventListener('blur', verificarPass)
     pass2.addEventListener('blur', verificarPass2)
-    btnEnviar.addEventListener('click', estasSeguro)
+
 
 }
 
@@ -125,24 +125,4 @@ function desactivarBoton() {
         btnEnviar.disabled = true;
 
     }
-}
-
-function estasSeguro() {
-    Swal.fire({
-        title: 'Estas Seguro?',
-        text: "La contraseña se modificara de forma definitiva",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Cambiar Contraseña'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire(
-                'Contraseña Cambiada!',
-                'Usala para acceder a partir de ahora.',
-                'success'
-            )
-        }
-    })
 }

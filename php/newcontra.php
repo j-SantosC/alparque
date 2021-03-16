@@ -14,7 +14,27 @@
 
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 </head>
-
+<script>
+    function estasSeguro() {
+    Swal.fire({
+        title: 'Estas Seguro?',
+        text: "La contraseña se modificara de forma definitiva",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Cambiar Contraseña'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Contraseña Cambiada!',
+                'Usala para acceder a partir de ahora.',
+                'success'
+            )
+        }
+    })
+}
+</script>
 <body>
 <div class="container mt-3">
    
@@ -65,7 +85,7 @@
                         <label class="form-label">Confirma Contraseña</label>
                         <input type="password" name="confirma" class="form-control" id="confirma">
                     </div>
-                    <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
+                    <button type="submit" onsubmit="return estasSeguro()"id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
             </div>
         </div>
