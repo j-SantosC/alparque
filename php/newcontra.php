@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-6 mx-auto">
-                <form method="post" id="miform" class="mx-auto" action="newcontrapost.php">
+                <form method="post" id="miform" name="miform" class="mx-auto" action="newcontrapost.php">
                     <div class="mb-3">
                         <label class="form-label">Nueva Contraseña</label>
                         <input type="password" name="contra" class="form-control" id="contra">
