@@ -28,8 +28,8 @@ function arrancarListeners() {
 
     nombre.addEventListener('blur', verificarnombre)
     edad.addEventListener('blur', verificaredad)
-        //foto.addEventListener('blur', verificarfoto)
     descripccion.addEventListener('blur', verificardesc)
+    btnEnviar.addEventListener('click', exitomsg)
 }
 
 function verificarnombre(e) {
@@ -140,4 +140,13 @@ function desactivarBoton() {
         btnEnviar.disabled = true;
 
     }
+}
+
+function exitomsg() {
+
+    Swal.fire(
+        'Buen Trabajo!',
+        'Has registrado a tu Mascota!',
+        'success'
+    )
 }
