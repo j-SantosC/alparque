@@ -1,6 +1,6 @@
 import { mostrarError, eliminarError } from '../js/funcionesval.js';
 
-import Swal from '../node_modules/sweetalert2/src/sweetalert2'
+import Swal from 'sweetalert2'
 
 Swal.fire(
     'Buen Trabajo!',
