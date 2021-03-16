@@ -159,7 +159,7 @@ function verificarPass2(e) {
         pass2.classList.add("is-valid")
         pass2.classList.remove("is-invalid")
 
-        vcontra1 = true
+        vcontra = true
         vcontra2 = true
 
         activarBoton()
