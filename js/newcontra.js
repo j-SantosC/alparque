@@ -26,7 +26,8 @@ function arrancarListeners() {
 
     pass1.addEventListener('blur', verificarPass)
     pass2.addEventListener('blur', verificarPass2)
-    btnEnviar.addEventListener('click', estasSeguro)
+
+    miform.addEventListener('submit', estasSeguro)
 
 }
 
