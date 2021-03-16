@@ -1,4 +1,5 @@
 import { mostrarError, eliminarError } from '../js/funcionesval.js';
+import Swal from 'sweetalert2';
 
 console.log("Funciona en link no me jodas");
 
