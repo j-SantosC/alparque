@@ -73,7 +73,7 @@
     
 </div>
 <?php $v=rand(10000,99999)?>
-<script src="../js/newcontra.js?v=<?php echo $v ?>"></script>
+<script type="module" src="../js/newcontra.js?v=<?php echo $v ?>"></script>
 </body>
 
 </html>
