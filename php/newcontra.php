@@ -14,29 +14,6 @@
 
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 </head>
-<script type="module">
-    import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
-
-    function estasSeguro() {
-    Swal.fire({
-        title: 'Estas Seguro?',
-        text: "La contraseña se modificara de forma definitiva",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Cambiar Contraseña'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire(
-                'Contraseña Cambiada!',
-                'Usala para acceder a partir de ahora.',
-                'success'
-            )
-        }
-    })
-}           
-</script>
 <body>
 <div class="container mt-3">
    
