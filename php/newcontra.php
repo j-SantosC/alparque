@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-6 mx-auto">
-                <form method="post" class="mx-auto" action="newcontrapost.php">
+                <form method="post" id="miform" class="mx-auto" action="newcontrapost.php">
                     <div class="mb-3">
                         <label class="form-label">Nueva Contraseña</label>
                         <input type="password" name="contra" class="form-control" id="contra">
@@ -64,7 +64,7 @@
                         <label class="form-label">Confirma Contraseña</label>
                         <input type="password" name="confirma" class="form-control" id="confirma">
                     </div>
-                    <button type="submit" onsubmit="estasSeguro()" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
+                    <button id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
             </div>
         </div>

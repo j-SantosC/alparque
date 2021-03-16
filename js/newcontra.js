@@ -2,6 +2,7 @@ console.log("linkado")
 
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
+miform = document.querySelector("#miform");
 
 let pass1 = document.querySelector('#contra');
 let pass2 = document.querySelector('#confirma');
@@ -12,6 +13,8 @@ let vcontra = false;
 let vcontra2 = false;
 
 let firstime = true;
+
+
 
 arrancarListeners();
 btnEnviar.disabled = true;
@@ -24,7 +27,6 @@ function arrancarListeners() {
     pass1.addEventListener('blur', verificarPass)
     pass2.addEventListener('blur', verificarPass2)
     btnEnviar.addEventListener('click', estasSeguro)
-
 
 }
 
@@ -144,6 +146,7 @@ function estasSeguro() {
                 'Usala para acceder a partir de ahora.',
                 'success'
             )
+            miform.submit()
         }
     })
 }
