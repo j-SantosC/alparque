@@ -1,7 +1,15 @@
 import { mostrarError, eliminarError } from '../js/funcionesval.js';
-import Swal from '../node_modules/sweetalert2/dist/sweetalert2'
 
-console.log("linked");
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+
+import 'sweetalert2/src/sweetalert2.scss'
+
+Swal.fire(
+    'Buen Trabajo!',
+    'Has registrado a tu Mascota!',
+    'success'
+)
+
 
 let nombre = document.querySelector('#nom');
 let edad = document.querySelector('#edad');
@@ -9,7 +17,7 @@ let foto = document.querySelector('#foto');
 let descripccion = document.querySelector('#desc');
 
 let btnEnviar = document.querySelector('#btnEnviar');
-let sweet = document.querySelector('#sweet');
+
 
 let vnom = false;
 let vedad = false;
@@ -31,7 +39,6 @@ function arrancarListeners() {
     nombre.addEventListener('blur', verificarnombre)
     edad.addEventListener('blur', verificaredad)
     descripccion.addEventListener('blur', verificardesc)
-    sweet.addEventListener('click', exitomsg)
 }
 
 function verificarnombre(e) {
@@ -142,13 +149,4 @@ function desactivarBoton() {
         btnEnviar.disabled = true;
 
     }
-}
-
-function exitomsg() {
-
-    Swal.fire(
-        'Buen Trabajo!',
-        'Has registrado a tu Mascota!',
-        'success'
-    )
 }
