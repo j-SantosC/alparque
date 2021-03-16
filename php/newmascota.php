@@ -87,7 +87,6 @@
                     
                 </form>
             </div>
-            <button class="btn btn-primary" id="sweet">Sweet Alert</button>
     </div>
     <?php $v=rand(10000,99999)?>
     <script type ="module" src="../js/newmascota.js?v=<?php echo $v ?>"></script>
