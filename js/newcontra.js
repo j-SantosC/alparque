@@ -27,7 +27,7 @@ function arrancarListeners() {
     pass1.addEventListener('blur', verificarPass)
     pass2.addEventListener('blur', verificarPass2)
 
-    miform.addEventListener('submit', estasSeguro)
+    btnEmviar.addEventListener('click', estasSeguro)
 
 }
 
@@ -133,7 +133,7 @@ function desactivarBoton() {
 
 function estasSeguro(e) {
 
-    e.preventDefault();
+    // e.preventDefault();
 
     Swal.fire({
         title: 'Estas Seguro?',
