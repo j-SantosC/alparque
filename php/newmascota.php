@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 
 </head>
 
@@ -90,7 +91,6 @@
     </div>
     <?php $v=rand(10000,99999)?>
     <script type ="module" src="../js/newmascota.js?v=<?php echo $v ?>"></script>
-    <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
