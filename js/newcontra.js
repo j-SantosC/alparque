@@ -131,7 +131,10 @@ function desactivarBoton() {
     }
 }
 
-function estasSeguro() {
+function estasSeguro(e) {
+
+    e.preventDefault();
+
     Swal.fire({
         title: 'Estas Seguro?',
         text: "La contraseña se modificara de forma definitiva",
