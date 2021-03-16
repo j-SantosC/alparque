@@ -2,7 +2,7 @@ console.log("linkado")
 
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
-miform = document.querySelector("#miform");
+let miform = document.querySelector("#miform");
 
 let pass1 = document.querySelector('#contra');
 let pass2 = document.querySelector('#confirma');
