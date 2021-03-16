@@ -2,11 +2,7 @@ import { mostrarError, eliminarError } from '../js/funcionesval.js';
 
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
-Swal.fire(
-    'Buen Trabajo!',
-    'Has registrado a tu Mascota!',
-    'success'
-)
+
 
 
 let nombre = document.querySelector('#nom');
@@ -37,6 +33,7 @@ function arrancarListeners() {
     nombre.addEventListener('blur', verificarnombre)
     edad.addEventListener('blur', verificaredad)
     descripccion.addEventListener('blur', verificardesc)
+    btnEnviar.addEventListener('click', msgExito)
 }
 
 function verificarnombre(e) {
@@ -147,4 +144,12 @@ function desactivarBoton() {
         btnEnviar.disabled = true;
 
     }
+}
+
+function msgExito() {
+    Swal.fire(
+        'Buen Trabajo!',
+        'Has registrado a tu Mascota!',
+        'success'
+    )
 }
