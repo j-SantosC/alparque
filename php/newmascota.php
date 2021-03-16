@@ -84,7 +84,7 @@
 
                 <br>
                     <button type ="submit" id="btnEnviar"name="save"class="btn btn-outline-primary btn-block mt-3">Guardar<i class="fa fa-save ml-2"></i></button>
-
+                    <button class="btn btn-primary" id="sweet">Sweet Alert</button>
                    
             </form>
         </div>

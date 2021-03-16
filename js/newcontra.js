@@ -124,5 +124,3 @@ function desactivarBoton() {
 
     }
 }
-
-console.log("lol");
