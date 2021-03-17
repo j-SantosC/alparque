@@ -1,6 +1,6 @@
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
-let btnBorrar = document.querySelector(".btnBorrar");
+let btnBorrar = document.querySelectorAll(".btnBorrar");
 
 btnBorrar.addEventListener('click', estasSeguro)
 
@@ -19,7 +19,7 @@ function estasSeguro(e) {
             Swal.fire({
                 title: 'Lo sentimos',
                 text: 'Tu mascota ha sido borrada!',
-                icon: 'error',
+                icon: 'success',
                 showConfirmButton: false,
             })
             setTimeout(() => {
