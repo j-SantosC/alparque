@@ -10,7 +10,7 @@ for (let i = 0; i < btnsBorrar.length; i++) {
 
 function estasSeguro(e) {
 
-    e.target.getAttribute("data-value")
+    console.lof(e.target.getAttribute("data-value"))
 
     Swal.fire({
         title: 'Estas Seguro?',
