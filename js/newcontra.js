@@ -133,7 +133,7 @@ function desactivarBoton() {
 
 function estasSeguro(e) {
 
-    // e.preventDefault();
+    e.preventDefault();
 
     Swal.fire({
         title: 'Estas Seguro?',
