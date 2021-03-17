@@ -148,7 +148,8 @@ function estasSeguro(e) {
             Swal.fire(
                 'Contraseña Cambiada!',
                 'Usala para acceder a partir de ahora.',
-                'success'
+                'success',
+                'showConfirmButton:false'
             )
             setTimeout(() => {
                 miform.submit()
