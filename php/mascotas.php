@@ -60,7 +60,6 @@ include "botones.php";
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Edad</th>
-                <th scope="col">Sexo</th>
                 <th scope="col">Borrar/Editar</th>
                 </tr>
             </thead>
@@ -80,7 +79,6 @@ include "botones.php";
                     <td>$fila[0]</td> 
                     <td>$fila[1]</td>
                     <td>$fila[2]</td>
-                    <td>$fila[3]</td>
                     <td><a data-value='$fila[0]' class='btn btn-danger btnBorrar'><i class='fa fa-trash text-white'></i></a>
                     <button class='btn btn-warning'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'><i class='fa fa-edit text-white'></i></button></td>
                     </tr>";

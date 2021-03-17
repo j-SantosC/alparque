@@ -21,8 +21,8 @@ function estasSeguro(e) {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
-                title: 'Lo sentimos',
-                text: 'Tu mascota ha sido borrada!',
+                title: 'Mascota Borrada',
+                text: 'Lo sentimos mucho por el perro!',
                 icon: 'error',
                 showConfirmButton: false,
             })
