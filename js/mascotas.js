@@ -23,7 +23,7 @@ function estasSeguro(e) {
             Swal.fire({
                 title: 'Lo sentimos',
                 text: 'Tu mascota ha sido borrada!',
-                icon: 'success',
+                icon: 'error',
                 showConfirmButton: false,
             })
             setTimeout(() => {
