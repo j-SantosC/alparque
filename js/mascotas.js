@@ -15,7 +15,7 @@ function estasSeguro(e) {
     Swal.fire({
         title: 'Estas Seguro?',
         text: 'La mascota se borrara de forma definitiva',
-        icon: 'warning',
+        icon: 'question',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
