@@ -23,7 +23,7 @@ function estasSeguro() {
                 showConfirmButton: false,
             })
             setTimeout(() => {
-                header('Location:inicio.php')
+                header('Location:../php/inicio.php')
             }, 1500)
         }
     })
