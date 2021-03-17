@@ -43,31 +43,7 @@ include "botones.php";
     </div>
     <div class="container">
 </div>
-<div class="row">
-    <div class="col mx-3">
-        <table class="table table-light table-striped">
-            <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Edad</th>
-                <th scope="col">Sexo</th>
-                <th scope="col">Borrar/Editar</th>
-                </tr>
-            </thead>
-
-            <?php 
-                include "conexion.php";
-                $sesion = $_SESSION["usuario"];
-
-
-                $consulta ="SELECT * FROM mascotas WHERE propietario ='$sesion' ";
-                $resultados = mysqli_query($conexion,$consulta);
-
-                echo "<tbody>";
-
-
-                echo " <script type='text/javascript'>     
+<script type='module'>     
                 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
                 
                 function estasSeguro(id) {
@@ -95,8 +71,29 @@ include "botones.php";
                             }
                         })
                 }
-            </script>";
+ </script>
+<div class="row">
+    <div class="col mx-3">
+        <table class="table table-light table-striped">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Borrar/Editar</th>
+                </tr>
+            </thead>
 
+            <?php 
+                include "conexion.php";
+                $sesion = $_SESSION["usuario"];
+
+
+                $consulta ="SELECT * FROM mascotas WHERE propietario ='$sesion' ";
+                $resultados = mysqli_query($conexion,$consulta);
+
+                echo "<tbody>";
 
                 while($fila=mysqli_fetch_row($resultados)){
                     echo "<tr>
