@@ -23,7 +23,7 @@ function estasSeguro(e) {
                 showConfirmButton: false,
             })
             setTimeout(() => {
-                window.location.href = `../php/borrar.php?id=${e.target.getAttribute("data-value")}`
+                window.location.href = `../php/inicio.php`
             }, 1500)
 
         }
