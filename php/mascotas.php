@@ -26,10 +26,11 @@ if(!isset($_SESSION["usuario"])){
 include "botones.php";
 
 ?>
-
 <script type="module">
-    import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'   
-    
+       import Swal from '../node_modules/sweetalert2/src/sweetalert2.js' 
+</script>
+<script>
+   
     function estasSeguro() {
 
     Swal.fire({
@@ -49,7 +50,7 @@ include "botones.php";
                 showConfirmButton: false,
             })
             setTimeout(() => {
-                window.location(`../php/borrar.php?id=${id}`)
+                window.location(`../php/borrar.php?id=${}`)
             }, 1500)
 
         }
