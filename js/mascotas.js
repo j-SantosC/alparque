@@ -3,7 +3,7 @@ import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 let btnBorrar = document.querySelector(".btnBorrar");
 
 
-function estasSeguro(id) {
+function estasSeguro() {
 
     Swal.fire({
         title: 'Estas Seguro?',
