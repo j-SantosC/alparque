@@ -26,11 +26,35 @@ if(!isset($_SESSION["usuario"])){
 include "botones.php";
 
 ?>
-<script>
- 
- function sayhi() {
-     console.log("HI");
- }
+<script type="module">
+
+    import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'   
+
+function estasSeguro(id) {
+
+    Swal.fire({
+        title: 'Estas Seguro?',
+        text: 'El email se modificara de forma definitiva',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Cambiar email'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: 'Buen Trabajo!',
+                text: 'Has cambiado tu email!',
+                icon: 'success',
+                showConfirmButton: false,
+            })
+            setTimeout(() => {
+                window.location(`../php/borrar.php?id=${id}`)
+            }, 1500)
+
+        }
+    })
+}
 
 </script>
 </div>
@@ -79,7 +103,7 @@ include "botones.php";
                     <td>$fila[1]</td>
                     <td>$fila[2]</td>
                     <td>$fila[3]</td>
-                    <td><button  class='btn btn-danger' onclick='sayhi()'><i class='fa fa-trash text-white'></i></button>
+                    <td><button  class='btn btn-danger' onclick='estasSeguro($fila[0])'><i class='fa fa-trash text-white'></i></button>
                     <button  class='btn btn-warning'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'><i class='fa fa-edit text-white'></i></button></td>
                     </tr>";
                 }
