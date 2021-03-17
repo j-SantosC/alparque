@@ -18,7 +18,7 @@ include "conexion.php";
 
         $passCifrado = password_hash($password1, PASSWORD_DEFAULT);
         
-        $registrar ="UPDATE usuarios SET password='$passCifrado' WHERE usuario='$sesion'";
+        $registrar ="UPDATE usuarios SET password='$passCifrado' WHERE nombre='$sesion'";
     
     mysqli_query($conexion,$registrar);
 
