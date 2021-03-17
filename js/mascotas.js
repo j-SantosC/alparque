@@ -10,6 +10,8 @@ for (let i = 0; i < btnsBorrar.length; i++) {
 
 function estasSeguro(e) {
 
+    e.target.getAttribute("data-value")
+
     Swal.fire({
         title: 'Estas Seguro?',
         text: 'La mascota se borrara de forma definitiva',
