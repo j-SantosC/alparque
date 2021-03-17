@@ -71,7 +71,7 @@ function estasSeguro(e) {
 
     Swal.fire({
         title: 'Estas Seguro?',
-        text: "El se modificara de forma definitiva",
+        text: "El email se modificara de forma definitiva",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',

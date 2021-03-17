@@ -34,7 +34,35 @@ include "botones.php";
 
         </div>
     </div>
+    <script>    
+        import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
+        
+        function estasSeguro(id) {
 
+                Swal.fire({
+                    title: 'Estas Seguro?',
+                    text: "El email se modificara de forma definitiva",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Cambiar email'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: 'Buen Trabajo!',
+                            text: 'Has cambiado tu email!',
+                            icon: 'success',
+                            showConfirmButton: false,
+                        })
+                        setTimeout(() => {
+                            window.location(`../php/borrar.php?id=${id}`)
+                        }, 1500)
+
+                    }
+                })
+        }
+    </script>
     <div class="row mb-5">
         <div class="col text-center">
             <h5 class="complementario cambiotipo ">Mis Mascotas</h5>
@@ -61,6 +89,7 @@ include "botones.php";
                 include "conexion.php";
                 $sesion = $_SESSION["usuario"];
 
+
                 $consulta ="SELECT * FROM mascotas WHERE propietario ='$sesion' ";
                 $resultados = mysqli_query($conexion,$consulta);
 
@@ -71,7 +100,7 @@ include "botones.php";
                     <td>$fila[1]</td>
                     <td>$fila[2]</td>
                     <td>$fila[3]</td>
-                    <td><button  class='btn btn-danger'><a href='borrar.php?id=$fila[0]'><i class='fa fa-trash text-white'></i></button>
+                    <td><button  class='btn btn-danger' onlcick='estasSeguro($fila[0])'><i class='fa fa-trash text-white'></i></button>
                     <button  class='btn btn-warning'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'><i class='fa fa-edit text-white'></i></button></td>
                     </tr>";
                 }
