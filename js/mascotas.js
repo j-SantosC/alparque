@@ -1,6 +1,6 @@
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
-let btnsBorrar = document.querySelectorAll(".btnBorrar");
+let btnsBorrar = document.querySelectorAll(".btnsBorrar");
 
 for (let i = 0; i < btnsBorrar.length; i++) {
 
