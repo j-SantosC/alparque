@@ -26,7 +26,7 @@ if(!isset($_SESSION["usuario"])){
 include "botones.php";
 
 ?>
-<script type="module">
+<script type="module" type="text/javascript">
        import Swal from '../node_modules/sweetalert2/src/sweetalert2.js' 
 
        function estasSeguro() {
@@ -55,7 +55,7 @@ Swal.fire({
 })
 }
 
-estasSeguro()
+
 </script>
 <script>
    
