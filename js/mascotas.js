@@ -4,7 +4,7 @@ let btnBorrar = document.querySelector("#btnBorrar");
 
 btnBorrar.addEventListener('click', estasSeguro);
 
-function estasSeguro(e) {
+function estasSeguro() {
 
     Swal.fire({
         title: 'Estas Seguro?',
