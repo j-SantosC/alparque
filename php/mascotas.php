@@ -43,35 +43,7 @@ include "botones.php";
     </div>
     <div class="container">
 </div>
-<script type='module'>     
-                import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
-                
-                function estasSeguro(id) {
-        
-                        Swal.fire({
-                            title: 'Estas Seguro?',
-                            text: 'El email se modificara de forma definitiva',
-                            icon: 'warning',
-                            showCancelButton: true,
-                            confirmButtonColor: '#3085d6',
-                            cancelButtonColor: '#d33',
-                            confirmButtonText: 'Cambiar email'
-                        }).then((result) => {
-                            if (result.isConfirmed) {
-                                Swal.fire({
-                                    title: 'Buen Trabajo!',
-                                    text: 'Has cambiado tu email!',
-                                    icon: 'success',
-                                    showConfirmButton: false,
-                                })
-                                setTimeout(() => {
-                                    window.location(`../php/borrar.php?id=${id}`)
-                                }, 1500)
-        
-                            }
-                        })
-                }
- </script>
+
 <div class="row">
     <div class="col mx-3">
         <table class="table table-light table-striped">
@@ -96,6 +68,36 @@ include "botones.php";
                 echo "<tbody>";
 
                 while($fila=mysqli_fetch_row($resultados)){
+
+                    echo"<script type='module'>     
+                    import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
+                    
+                    function estasSeguro(id) {
+            
+                            Swal.fire({
+                                title: 'Estas Seguro?',
+                                text: 'El email se modificara de forma definitiva',
+                                icon: 'warning',
+                                showCancelButton: true,
+                                confirmButtonColor: '#3085d6',
+                                cancelButtonColor: '#d33',
+                                confirmButtonText: 'Cambiar email'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    Swal.fire({
+                                        title: 'Buen Trabajo!',
+                                        text: 'Has cambiado tu email!',
+                                        icon: 'success',
+                                        showConfirmButton: false,
+                                    })
+                                    setTimeout(() => {
+                                        window.location(`../php/borrar.php?id=${id}`)
+                                    }, 1500)
+            
+                                }
+                            })
+                    }
+                    </script>";
                     echo "<tr>
                     <td>$fila[0]</td> 
                     <td>$fila[1]</td>
