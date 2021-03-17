@@ -17,8 +17,8 @@ function estasSeguro(e) {
         text: 'La mascota se borrara de forma definitiva',
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#33b5e5',
+        cancelButtonColor: '#B85C47',
         confirmButtonText: 'Eliminar Mascota'
     }).then((result) => {
         if (result.isConfirmed) {
