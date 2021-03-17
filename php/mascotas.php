@@ -67,7 +67,7 @@ include "botones.php";
                 echo "<tbody>";
 
 
-                echo " <script type='module'>     
+                echo " <script type='text/javascript'>     
                 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
                 
                 function estasSeguro(id) {
@@ -97,7 +97,7 @@ include "botones.php";
                 }
             </script>";
 
-            
+
                 while($fila=mysqli_fetch_row($resultados)){
                     echo "<tr>
                     <td>$fila[0]</td> 
