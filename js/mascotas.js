@@ -13,7 +13,7 @@ function estasSeguro(e) {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Cambiar email'
+        confirmButtonText: 'Eliminar Mascota'
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
@@ -23,7 +23,7 @@ function estasSeguro(e) {
                 showConfirmButton: false,
             })
             setTimeout(() => {
-                window.location.href = `../php/inicio.php`
+                window.location.href = `../php/borrar.php?id=${e.target.getAttribute("data-value")}`
             }, 1500)
 
         }
