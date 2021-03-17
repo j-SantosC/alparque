@@ -1,10 +1,10 @@
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
-function estasSeguro() {
+function estasSeguro(id) {
 
     Swal.fire({
         title: 'Estas Seguro?',
-        text: 'El email se modificara de forma definitiva',
+        text: 'La mascota se borrara de forma definitiva',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -13,13 +13,13 @@ function estasSeguro() {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
-                title: 'Buen Trabajo!',
-                text: 'Has cambiado tu email!',
-                icon: 'success',
+                title: 'Lo sentimos',
+                text: 'Tu mascota ha sido borrada!',
+                icon: 'error',
                 showConfirmButton: false,
             })
             setTimeout(() => {
-                window.location(`../php/borrar.php?`)
+                window.location(`../php/borrar.php?id=${id}`)
             }, 1500)
 
         }
