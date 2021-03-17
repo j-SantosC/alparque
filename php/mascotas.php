@@ -30,7 +30,7 @@ include "botones.php";
 
     import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'   
 
-function estasSeguro(id) {
+function estasSeguro() {
 
     Swal.fire({
         title: 'Estas Seguro?',
@@ -103,7 +103,7 @@ function estasSeguro(id) {
                     <td>$fila[1]</td>
                     <td>$fila[2]</td>
                     <td>$fila[3]</td>
-                    <td><button  class='btn btn-danger' onclick='estasSeguro(1)'><i class='fa fa-trash text-white'></i></button>
+                    <td><button  class='btn btn-danger' onclick='estasSeguro()'><i class='fa fa-trash text-white'></i></button>
                     <button  class='btn btn-warning'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'><i class='fa fa-edit text-white'></i></button></td>
                     </tr>";
                 }
