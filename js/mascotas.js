@@ -23,7 +23,7 @@ function estasSeguro() {
                 showConfirmButton: false,
             })
             setTimeout(() => {
-                window.location = "../php/borrar.php?id=$fila[0]"
+                window.location = "../inicio.php"
             }, 1500)
         }
     })
