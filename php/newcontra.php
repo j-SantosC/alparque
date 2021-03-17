@@ -64,7 +64,7 @@
                         <label class="form-label">Confirma Contraseña</label>
                         <input type="password" name="confirma" class="form-control" id="confirma">
                     </div>
-                    <button id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
+                    <button type="submit" id="btnEnviar" class="btn btn-info btn-block mt-3">Enviar</button>
                 </form>
             </div>
         </div>

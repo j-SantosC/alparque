@@ -143,15 +143,15 @@ function estasSeguro(e) {
         confirmButtonText: 'Cambiar Contraseña'
     }).then((result) => {
         if (result.isConfirmed) {
-            Swal.fire(
-                'Contraseña Cambiada!',
-                'Usala para acceder a partir de ahora.',
-                'success',
-                'showConfirmButton:false'
-            )
+            Swal.fire({
+                title: 'Buen Trabajo!',
+                text: 'Has registrado a tu Mascota!',
+                icon: 'success',
+                showConfirmButton: false,
+            })
             setTimeout(() => {
                 miform.submit()
-            }, 2000)
+            }, 1500)
 
         }
     })
