@@ -145,7 +145,7 @@ function estasSeguro(e) {
         if (result.isConfirmed) {
             Swal.fire({
                 title: 'Buen Trabajo!',
-                text: 'Has registrado a tu Mascota!',
+                text: 'Has cambiado tu contraseña!',
                 icon: 'success',
                 showConfirmButton: false,
             })
