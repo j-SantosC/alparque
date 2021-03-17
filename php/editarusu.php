@@ -11,6 +11,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
+
 </head>
 
 <body>
@@ -58,7 +61,7 @@ $query ="SELECT * FROM usuarios WHERE nombre = '$sesion'";
             <div class="container">
         <div class="row mb-5">
             <div class="col-md-6 mx-auto">
-                <form method="post" class="mx-auto" action="editarusupost.php">
+                <form method="post" id="miform" class="mx-auto" action="editarusupost.php">
                     <div class="mb-3" id="emaildiv">
                         <label class="form-label">Cambiar Email</label>
                         <input type="text" name="email" id="email" value="<?php echo $email ?>" id="mail" class="form-control">

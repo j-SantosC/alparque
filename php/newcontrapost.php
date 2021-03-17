@@ -22,11 +22,10 @@ include "conexion.php";
     
     mysqli_query($conexion,$registrar);
 
-    echo "nueva contraseña cambiada a " . $password1;
     
 }
 
 
- //header("Location:inicio.php");
+ header("Location:inicio.php");
 
 ?>
