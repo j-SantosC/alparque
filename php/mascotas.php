@@ -13,9 +13,6 @@
 
 <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 
-<?php $v=rand(10000,99999)?>
- <script type="module" src="../js/mascotas.js?v=<?php echo $v ?>"></script>
- 
 </head>
 <body>
 <div class="container mt-3">
@@ -30,7 +27,7 @@ include "botones.php";
 
 ?>
 <script>
-    estasSeguro(1)
+   console.log("hi");
 </script>
 </div>
        <div class="row fondo my-3">
@@ -90,5 +87,7 @@ include "botones.php";
 
         </table>
     </div>
+    <?php $v=rand(10000,99999)?>
+ <script type="module" src="../js/mascotas.js?v=<?php echo $v ?>"></script>
 </body>
 </html>
