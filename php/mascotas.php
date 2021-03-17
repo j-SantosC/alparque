@@ -26,12 +26,11 @@ if(!isset($_SESSION["usuario"])){
 include "botones.php";
 
 ?>
-<script type="module">
-    import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'   
-</script>
-<script>
 
-function estasSeguro() {
+<script>
+    import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'   
+    
+    function estasSeguro() {
 
     Swal.fire({
         title: 'Estas Seguro?',
