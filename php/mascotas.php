@@ -50,7 +50,7 @@ include "botones.php";
                 showConfirmButton: false,
             })
             setTimeout(() => {
-                window.location(`../php/borrar.php?id=${}`)
+                window.location(`../php/borrar.php?`)
             }, 1500)
 
         }
