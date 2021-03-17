@@ -30,7 +30,7 @@ function estasSeguro(e) {
             })
             setTimeout(() => {
                 window.location.href = `../php/borrar.php?id=${e.target.getAttribute("data-value")}`
-            }, 1000)
+            }, 1500)
 
         }
     })
