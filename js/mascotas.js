@@ -8,7 +8,7 @@ function estasSeguro() {
 
     Swal.fire({
         title: 'Estas Seguro?',
-        text: "El se modificara de forma definitiva",
+        text: "Seguro que quieres eliminar a tu mascota",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -17,11 +17,14 @@ function estasSeguro() {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
-                title: 'Buen Trabajo!',
-                text: 'Has cambiado tu email!',
-                icon: 'success',
+                title: 'Lo sentimos!',
+                text: 'Tu mascota ha sido eliminada!',
+                icon: 'error',
                 showConfirmButton: false,
             })
+            setTimeout(() => {
+                header('Location:borrar.php?id=$fila[0]')
+            }, 1500)
         }
     })
 }
