@@ -94,6 +94,6 @@ include "botones.php";
         </table>
     </div>
     <?php $v=rand(10000,99999)?>
- <script src="../js/mascotas.js?v=<?php echo $v ?>"></script>
+ <script type="module" src="../js/mascotas.js?v=<?php echo $v ?>"></script>
 </body>
 </html>
