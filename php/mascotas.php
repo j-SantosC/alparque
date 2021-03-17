@@ -27,7 +27,7 @@ include "botones.php";
 
 ?>
 
-<script>
+<script type="module">
     import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'   
     
     function estasSeguro() {
