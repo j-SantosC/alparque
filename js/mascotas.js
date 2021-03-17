@@ -1,6 +1,10 @@
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
-function estasSeguro(id) {
+let btnBorrar = document.querySelector(".btnBorrar");
+
+btnBorrar.addEventListener('click', estasSeguro)
+
+function estasSeguro(e) {
 
     Swal.fire({
         title: 'Estas Seguro?',
@@ -19,7 +23,7 @@ function estasSeguro(id) {
                 showConfirmButton: false,
             })
             setTimeout(() => {
-                window.location(`../php/borrar.php?id=${id}`)
+                window.location(`../php/borrar.php?id=${e.target.data('value')}`)
             }, 1500)
 
         }
