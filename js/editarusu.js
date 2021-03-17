@@ -76,7 +76,7 @@ function estasSeguro(e) {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Cambiar Contraseña'
+        confirmButtonText: 'Cambiar email'
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({

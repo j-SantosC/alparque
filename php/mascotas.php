@@ -11,6 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
+
+
 </head>
 <body>
 <div class="container mt-3">
@@ -69,7 +72,7 @@ include "botones.php";
                     <td>$fila[2]</td>
                     <td>$fila[3]</td>
                     <td><button class='btn btn-danger'><a href='borrar.php?id=$fila[0]'><i class='fa fa-trash text-white'></i></button></td>
-                    <td><button class='btn btn-warning'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'><i class='fa fa-edit text-white'></i></button></td>
+                    <td><button id='btnBorrar' class='btn btn-warning'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'><i class='fa fa-edit text-white'></i></button></td>
                     </tr>";
                 }
                 echo "</tbody>"
@@ -78,6 +81,7 @@ include "botones.php";
         </table>
     </div>
 </div>
-
+<?php $v=rand(10000,99999)?>
+ <script type="module" src="../js/mascotas.js?v=<?php echo $v ?>"></script>
 </body>
 </html>
