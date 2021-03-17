@@ -1,8 +1,12 @@
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
-let btnBorrar = document.querySelectorAll(".btnBorrar");
+let btnsBorrar = document.querySelectorAll(".btnBorrar");
 
-btnBorrar.addEventListener('click', estasSeguro)
+for (let i = 0; i < btnsBorrar.length; i++) {
+
+    btnsBorrar[i].addEventListener('click', estasSeguro)
+
+}
 
 function estasSeguro(e) {
 
