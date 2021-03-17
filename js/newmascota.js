@@ -12,6 +12,8 @@ let descripccion = document.querySelector('#desc');
 
 let btnEnviar = document.querySelector('#btnEnviar');
 
+let miform = document.querySelector('#miform');
+
 
 let vnom = false;
 let vedad = false;
@@ -33,7 +35,7 @@ function arrancarListeners() {
     nombre.addEventListener('blur', verificarnombre)
     edad.addEventListener('blur', verificaredad)
     descripccion.addEventListener('blur', verificardesc)
-    btnEnviar.addEventListener('click', msgExito)
+    miform.addEventListener('submit', msgExito)
 }
 
 function verificarnombre(e) {
@@ -146,10 +148,15 @@ function desactivarBoton() {
     }
 }
 
-function msgExito() {
+function msgExito(e) {
+    e.preventDefaurlt();
     Swal.fire(
         'Buen Trabajo!',
         'Has registrado a tu Mascota!',
-        'success'
+        'success',
+        'showConfirmButton:false'
     )
+    setTimeout(() => {
+        miform.submit();
+    }, 1500)
 }

@@ -25,6 +25,6 @@ include "conexion.php";
 }
 
 
- header("Location:mascotas.php");
+ header("Location:inicio.php");
 
 ?>
