@@ -27,6 +27,9 @@ include "botones.php";
 
 ?>
 <script>
+    function sayhi() {
+     console.log("HI");
+ }
    sayhi();
 </script>
 </div>
