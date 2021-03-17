@@ -154,7 +154,7 @@ function msgExito(e) {
         'Buen Trabajo!',
         'Has registrado a tu Mascota!',
         'success',
-        'showConfirmButton:false'
+        'showConfirmButton=false'
     )
     setTimeout(() => {
         miform.submit();
