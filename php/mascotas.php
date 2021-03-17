@@ -80,7 +80,7 @@ include "botones.php";
                     <td>$fila[1]</td>
                     <td>$fila[2]</td>
                     <td><a data-value='$fila[0]' class='btn btn-danger btnBorrar'>Borrar</a>
-                    <a class='btn btn-warning text-light' href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'></a></td>
+                    <a class='btn btn-warning text-light' href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'>Editar</a></td>
                     </tr>";
                 }
 
