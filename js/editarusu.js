@@ -87,7 +87,7 @@ function estasSeguro(e) {
             })
             setTimeout(() => {
                 miform.submit()
-            }, 1500)
+            }, 1000)
 
         }
     })

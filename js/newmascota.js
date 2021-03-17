@@ -158,5 +158,5 @@ function msgExito(e) {
     })
     setTimeout(() => {
         miform.submit();
-    }, 1500)
+    }, 1000)
 }
