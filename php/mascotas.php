@@ -60,7 +60,7 @@ include "botones.php";
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Edad</th>
-                <th scope="col">Borrar/Editar</th>
+                <th scope="col">Herramientas</th>
                 </tr>
             </thead>
 
@@ -80,7 +80,7 @@ include "botones.php";
                     <td>$fila[1]</td>
                     <td>$fila[2]</td>
                     <td><a data-value='$fila[0]' class='btn btn-danger btnBorrar'>Borrar</a>
-                    <button class='btn btn-warning'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'>Editar</button></td>
+                    <button class='btn btn-warning text-light'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'>Editar</button></td>
                     </tr>";
                 }
 
