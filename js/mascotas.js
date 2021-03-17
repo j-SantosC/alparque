@@ -1,6 +1,6 @@
 import Swal from '../node_modules/sweetalert2/src/sweetalert2.js'
 
-let btnBorrar = document.querySelector("#btnBorrar");
+let btnBorrar = document.querySelector(".btnBorrar");
 
 btnBorrar.addEventListener('click', estasSeguro);
 
@@ -22,6 +22,9 @@ function estasSeguro() {
                 icon: 'error',
                 showConfirmButton: false,
             })
+            setTimeout(() => {
+                header('Location:borrar.php?id=$fila[0]')
+            }, 1500)
         }
     })
 }

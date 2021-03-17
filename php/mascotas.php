@@ -71,7 +71,7 @@ include "botones.php";
                     <td>$fila[1]</td>
                     <td>$fila[2]</td>
                     <td>$fila[3]</td>
-                    <td><button id='btnBorrar' class='btn btn-danger'><i class='fa fa-trash text-white'></i></button></td>
+                    <td><button class='btnBorrar btn btn-danger'><i class='fa fa-trash text-white'></i></button></td>
                     <td><button  class='btn btn-warning'><a href='editarmascota.php?id=$fila[0]&nombre=$fila[1]&edad=$fila[2]&img=$fila[5]&descripcion=$fila[6]'><i class='fa fa-edit text-white'></i></button></td>
                     </tr>";
                 }
