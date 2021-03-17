@@ -150,12 +150,12 @@ function desactivarBoton() {
 
 function msgExito(e) {
     e.preventDefault();
-    Swal.fire(
-        'Buen Trabajo!',
-        'Has registrado a tu Mascota!',
-        'success',
-        'showConfirmButton=false'
-    )
+    Swal.fire({
+        title: 'Buen Trabajo!',
+        text: 'Has registrado a tu Mascota!',
+        icon: 'success',
+        showConfirmButton: false,
+    })
     setTimeout(() => {
         miform.submit();
     }, 1500)
