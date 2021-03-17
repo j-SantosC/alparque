@@ -2,6 +2,8 @@
 
 
 
+
+
  function estasSeguro(id) {
 
      Swal.fire({
