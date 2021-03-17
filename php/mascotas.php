@@ -27,7 +27,7 @@ include "botones.php";
 
 ?>
 <script>
-   console.log("hi");
+   sayhi();
 </script>
 </div>
        <div class="row fondo my-3">
