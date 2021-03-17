@@ -149,7 +149,7 @@ function desactivarBoton() {
 }
 
 function msgExito(e) {
-    e.preventDefaurlt();
+    e.preventDefault();
     Swal.fire(
         'Buen Trabajo!',
         'Has registrado a tu Mascota!',
