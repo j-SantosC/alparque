@@ -29,7 +29,7 @@
 
         </div>
     </div>
-        <div class="row fondo mx-auto p-5">
+        <div class="row fondo mx-auto mt-0 p-5">
             <div class="col mx-auto">
                 <p class="text-light"> El email ya existe</p>
                 <a href="newuser.php" class="btn btn-outline-light">Volver</a>
