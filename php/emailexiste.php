@@ -22,14 +22,14 @@
         </div>
     </div>
 
-    <div class="row mb-0">
+    <div class="row">
         <div class="col text-center">
             <h5 class="complementario cambiotipo ">Lo sentimos</h5>
             <hr style="height:1px;border-width:0;color:#B84758;background-color:#B84758">
 
         </div>
     </div>
-        <div class="row fondo mx-auto mt-0 p-5">
+        <div class="row fondo mx-auto p-5">
             <div class="col mx-auto">
                 <p class="text-light"> El email ya existe</p>
                 <a href="newuser.php" class="btn btn-outline-light">Volver</a>
