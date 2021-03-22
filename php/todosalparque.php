@@ -59,13 +59,9 @@
                             while($fila=mysqli_fetch_row($resultados)){  
                                 if($fila[7] == $_SESSION["usuario"]){
                                 echo '
-                                <div class="col-xs-12 col-sm text-center ">
-                                    <div class="card  ml-3 mt-3 mx-auto" style="width: 12rem ;">
-                                        <img src="' .$fila[5] .'" class="card-img-top" style="width:100%;height:100px;object-fit:cover">
-                                        <div class="card-body">
-                                            <h5 class="card-title">' .$fila[1].'</h5>
-                                        </div>
-                                    </div>
+                                <div class="col-xs-12 col-sm-4 text-center ">
+                                        <img src="' .$fila[5] .'" class=" rounded-circle" style="width:200px;height:200px;object-fit:cover">
+                                        <h5 class="text-center">' .$fila[1].'</h5>
                                 </div>
                                 ';
                                 }                                
