@@ -59,9 +59,9 @@
                             while($fila=mysqli_fetch_row($resultados)){  
                                 if($fila[7] == $_SESSION["usuario"]){
                                 echo '
-                                <div class="col-xs-12 col-sm-4 text-center ">
+                                <div class="col-xs-12 col-sm text-center ">
                                         <img src="' .$fila[5] .'" class=" rounded-circle" style="width:200px;height:200px;object-fit:cover">
-                                        <h5 class="text-center">' .$fila[1].'</h5>
+                                        <h5 class="text-center mt-3">' .$fila[1].'</h5>
                                 </div>
                                 ';
                                 }                                
