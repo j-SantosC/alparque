@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <div class="row mb-5">
+    <div class="row ">
         <div class="col text-center">
             <h5 class="complementario cambiotipo ">Lo sentimos</h5>
             <hr style="height:1px;border-width:0;color:#B84758;background-color:#B84758">
